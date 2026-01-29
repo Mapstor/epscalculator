@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weighted Average Shares Outstanding: Calculation Guide (2025)</title>
+  <meta name="description" content="Learn how to calculate weighted average shares outstanding for EPS. Step-by-step guide with examples covering share issuances, buybacks, and stock splits.">
+  <meta property="og:title" content="Weighted Average Shares Outstanding: Calculation Guide">
+  <meta property="og:description" content="Learn how to calculate weighted average shares outstanding for EPS.">
+  <meta property="og:image" content="https://epscalculator.org/assets/images/og-image.png">
+  <meta property="og:url" content="https://epscalculator.org/blog/weighted-average-shares-outstanding/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://epscalculator.org/blog/weighted-average-shares-outstanding/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="header"><div class="container"><div class="header-inner">
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a>
+    <nav class="nav-desktop"><a href="/">Calculator</a><a href="/blog/" class="active">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+    <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div></div></header>
+
+  <main><div class="container content-narrow">
+    <article>
+      <h1>Weighted Average Shares Outstanding: Complete Calculation Guide</h1>
+      <p class="intro-text">Weighted average shares outstanding is a critical component of the EPS formula. This guide explains why weighted averages are used, how to calculate them, and how to handle stock splits, buybacks, and other share changes.</p>
+
+      <section class="content-section">
+        <h2>What is Weighted Average Shares Outstanding?</h2>
+        <p>Weighted average shares outstanding represents the average number of shares that existed during a specific reporting period, weighted by the time each share count was in effect. It's used in the EPS calculation to fairly represent share ownership throughout the period.</p>
+
+        <p>The concept is simple: if a company had 10 million shares for half the year and 12 million shares for the other half, it wouldn't be accurate to use either number alone. The weighted average of 11 million shares properly reflects the shares outstanding during the entire year.</p>
+
+        <h3>Why Use Weighted Average?</h3>
+        <p>Companies frequently change their share counts through:</p>
+        <ul>
+          <li>Issuing new shares (equity offerings, acquisitions, employee exercises)</li>
+          <li>Repurchasing shares (buybacks)</li>
+          <li>Converting securities (convertible bonds, preferred stock)</li>
+          <li>Stock splits and reverse splits</li>
+        </ul>
+
+        <p>Using the weighted average ensures that EPS accurately reflects profitability throughout the entire period, not just at a single point in time.</p>
+
+        <h3>Basic vs. Diluted Weighted Average</h3>
+        <p>There are two weighted average calculations:</p>
+        <ul>
+          <li><strong>Basic weighted average:</strong> Includes only shares actually outstanding</li>
+          <li><strong>Diluted weighted average:</strong> Includes basic shares plus potentially dilutive securities</li>
+        </ul>
+        <p>This guide focuses primarily on basic weighted average calculation. Diluted shares add complexity through the treasury stock method and if-converted method.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>The Weighted Average Formula</h2>
+        <p>The general formula for weighted average shares outstanding is:</p>
+
+        <div class="formula-box">
+          <code>Weighted Avg = Σ (Shares Outstanding x Fraction of Period)</code>
+        </div>
+
+        <p>In practical terms:</p>
+        <div class="formula-box">
+          <code>Weighted Avg = (Shares₁ x Time₁) + (Shares₂ x Time₂) + ... + (Sharesₙ x Timeₙ)</code>
+        </div>
+
+        <p>Where:</p>
+        <ul>
+          <li>Shares₁, Shares₂, etc. = Share counts during each sub-period</li>
+          <li>Time₁, Time₂, etc. = Fraction of the total period each share count was outstanding</li>
+        </ul>
+
+        <h3>Time Fraction Calculation</h3>
+        <p>Time fractions can be calculated using:</p>
+        <ul>
+          <li><strong>Months:</strong> Number of months / 12 (for annual calculations)</li>
+          <li><strong>Days:</strong> Number of days / 365 (more precise)</li>
+          <li><strong>Quarters:</strong> Number of quarters / 4 (for quarterly approximations)</li>
+        </ul>
+        <p>Most calculations use months for simplicity, which is sufficiently accurate for most purposes.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step-by-Step Calculation Process</h2>
+        <p>Follow these steps to calculate weighted average shares outstanding:</p>
+
+        <h3>Step 1: Identify All Share Changes</h3>
+        <p>List every event that changed the share count during the period:</p>
+        <ul>
+          <li>Beginning share count</li>
+          <li>Share issuances (with dates and amounts)</li>
+          <li>Share repurchases (with dates and amounts)</li>
+          <li>Stock splits or dividends (with dates and ratios)</li>
+        </ul>
+
+        <h3>Step 2: Create Sub-Periods</h3>
+        <p>Divide the reporting period into sub-periods where the share count remained constant. Each share change event creates a new sub-period.</p>
+
+        <h3>Step 3: Calculate Time Weights</h3>
+        <p>Determine the fraction of the total period for each sub-period. Ensure all fractions sum to 1.0 (or 100%).</p>
+
+        <h3>Step 4: Apply the Formula</h3>
+        <p>Multiply each sub-period's share count by its time weight, then sum all results.</p>
+
+        <h3>Step 5: Verify Results</h3>
+        <p>The weighted average should fall between the lowest and highest share counts during the period. If it doesn't, recheck calculations.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Example 1: Single Share Change</h2>
+        <p>Company ABC starts the year with 20 million shares and issues 4 million new shares on July 1.</p>
+
+        <h3>Given Information</h3>
+        <ul>
+          <li>January 1: 20,000,000 shares</li>
+          <li>July 1: Issue 4,000,000 shares (new total: 24,000,000)</li>
+          <li>December 31: 24,000,000 shares</li>
+        </ul>
+
+        <h3>Calculation</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Period</th><th>Shares</th><th>Months</th><th>Weight</th><th>Weighted Shares</th></tr></thead>
+            <tbody>
+              <tr><td>Jan 1 - Jun 30</td><td>20,000,000</td><td>6</td><td>6/12 = 0.50</td><td>10,000,000</td></tr>
+              <tr><td>Jul 1 - Dec 31</td><td>24,000,000</td><td>6</td><td>6/12 = 0.50</td><td>12,000,000</td></tr>
+              <tr><td colspan="4"><strong>Weighted Average</strong></td><td><strong>22,000,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>The weighted average of 22 million shares properly reflects that the company had fewer shares for the first half of the year.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Example 2: Multiple Share Changes</h2>
+        <p>Company XYZ has more complex share activity during the year.</p>
+
+        <h3>Given Information</h3>
+        <ul>
+          <li>January 1: 15,000,000 shares</li>
+          <li>March 1: Issue 3,000,000 shares (new total: 18,000,000)</li>
+          <li>August 1: Repurchase 2,000,000 shares (new total: 16,000,000)</li>
+          <li>November 1: Issue 1,000,000 shares (new total: 17,000,000)</li>
+          <li>December 31: 17,000,000 shares</li>
+        </ul>
+
+        <h3>Calculation</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Period</th><th>Shares</th><th>Months</th><th>Weight</th><th>Weighted Shares</th></tr></thead>
+            <tbody>
+              <tr><td>Jan 1 - Feb 28</td><td>15,000,000</td><td>2</td><td>2/12 = 0.167</td><td>2,500,000</td></tr>
+              <tr><td>Mar 1 - Jul 31</td><td>18,000,000</td><td>5</td><td>5/12 = 0.417</td><td>7,500,000</td></tr>
+              <tr><td>Aug 1 - Oct 31</td><td>16,000,000</td><td>3</td><td>3/12 = 0.250</td><td>4,000,000</td></tr>
+              <tr><td>Nov 1 - Dec 31</td><td>17,000,000</td><td>2</td><td>2/12 = 0.167</td><td>2,833,333</td></tr>
+              <tr><td colspan="4"><strong>Weighted Average</strong></td><td><strong>16,833,333</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>The weighted average of approximately 16.8 million shares reflects the various changes throughout the year.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Handling Stock Splits</h2>
+        <p>Stock splits require special treatment because they change share counts retroactively for comparison purposes.</p>
+
+        <h3>The Retroactive Adjustment Rule</h3>
+        <p>When a stock split occurs, all share counts before the split are adjusted as if the split had occurred at the beginning of the period. This ensures comparability across time periods.</p>
+
+        <h3>Example: 2-for-1 Stock Split</h3>
+        <p>Company DEF has a 2-for-1 split on September 1:</p>
+        <ul>
+          <li>January 1: 10,000,000 shares</li>
+          <li>September 1: 2-for-1 split (shares double to 20,000,000)</li>
+          <li>December 31: 20,000,000 shares</li>
+        </ul>
+
+        <h3>Calculation with Split Adjustment</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Period</th><th>Actual Shares</th><th>Split Adjustment</th><th>Adjusted Shares</th><th>Weight</th><th>Weighted</th></tr></thead>
+            <tbody>
+              <tr><td>Jan 1 - Aug 31</td><td>10,000,000</td><td>x 2</td><td>20,000,000</td><td>8/12</td><td>13,333,333</td></tr>
+              <tr><td>Sep 1 - Dec 31</td><td>20,000,000</td><td>x 1</td><td>20,000,000</td><td>4/12</td><td>6,666,667</td></tr>
+              <tr><td colspan="5"><strong>Weighted Average</strong></td><td><strong>20,000,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>After applying the retroactive adjustment, the weighted average equals 20 million shares, reflecting the current share structure.</p>
+
+        <h3>Why Retroactive Adjustment?</h3>
+        <p>If we didn't adjust, the calculation would be:</p>
+        <p>(10M x 8/12) + (20M x 4/12) = 6.67M + 6.67M = 13.33M shares</p>
+        <p>This would understate shares and overstate EPS. The retroactive adjustment ensures EPS is calculated as if all shares existed in their current split-adjusted form.</p>
+
+        <h3>Reverse Splits</h3>
+        <p>Reverse splits work the same way but reduce share counts. For a 1-for-10 reverse split:</p>
+        <ul>
+          <li>Multiply pre-split shares by 0.1</li>
+          <li>Post-split shares remain unchanged</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Stock Dividends</h2>
+        <p>Stock dividends (like a 10% stock dividend) are treated similarly to stock splits.</p>
+
+        <h3>Example: 10% Stock Dividend</h3>
+        <p>Company GHI declares a 10% stock dividend on October 1:</p>
+        <ul>
+          <li>January 1: 12,000,000 shares</li>
+          <li>October 1: 10% stock dividend (shares increase by 1,200,000 to 13,200,000)</li>
+        </ul>
+
+        <h3>Calculation</h3>
+        <p>Adjustment factor = 1.10 (or 110%)</p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Period</th><th>Actual</th><th>Adjustment</th><th>Adjusted</th><th>Weight</th><th>Weighted</th></tr></thead>
+            <tbody>
+              <tr><td>Jan 1 - Sep 30</td><td>12,000,000</td><td>x 1.10</td><td>13,200,000</td><td>9/12</td><td>9,900,000</td></tr>
+              <tr><td>Oct 1 - Dec 31</td><td>13,200,000</td><td>x 1.00</td><td>13,200,000</td><td>3/12</td><td>3,300,000</td></tr>
+              <tr><td colspan="5"><strong>Weighted Average</strong></td><td><strong>13,200,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Combining Multiple Events</h2>
+        <p>Real-world calculations often combine issuances, buybacks, and splits. Handle these systematically.</p>
+
+        <h3>Example: Complex Scenario</h3>
+        <p>Company JKL has the following activity:</p>
+        <ul>
+          <li>January 1: 8,000,000 shares</li>
+          <li>April 1: Issue 2,000,000 shares (total: 10,000,000)</li>
+          <li>July 1: 2-for-1 stock split (total: 20,000,000)</li>
+          <li>October 1: Repurchase 1,000,000 shares (total: 19,000,000)</li>
+        </ul>
+
+        <h3>Step 1: Apply Split Adjustment to All Pre-Split Periods</h3>
+        <p>All share counts before July 1 must be multiplied by 2:</p>
+        <ul>
+          <li>January 1 - March 31: 8,000,000 x 2 = 16,000,000 (adjusted)</li>
+          <li>April 1 - June 30: 10,000,000 x 2 = 20,000,000 (adjusted)</li>
+        </ul>
+
+        <h3>Step 2: Calculate Weighted Average</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Period</th><th>Adjusted Shares</th><th>Months</th><th>Weight</th><th>Weighted</th></tr></thead>
+            <tbody>
+              <tr><td>Jan 1 - Mar 31</td><td>16,000,000</td><td>3</td><td>3/12</td><td>4,000,000</td></tr>
+              <tr><td>Apr 1 - Jun 30</td><td>20,000,000</td><td>3</td><td>3/12</td><td>5,000,000</td></tr>
+              <tr><td>Jul 1 - Sep 30</td><td>20,000,000</td><td>3</td><td>3/12</td><td>5,000,000</td></tr>
+              <tr><td>Oct 1 - Dec 31</td><td>19,000,000</td><td>3</td><td>3/12</td><td>4,750,000</td></tr>
+              <tr><td colspan="4"><strong>Weighted Average</strong></td><td><strong>18,750,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Quarterly Weighted Average Calculations</h2>
+        <p>For quarterly EPS, calculate the weighted average for that specific quarter.</p>
+
+        <h3>Example: Q3 Calculation</h3>
+        <p>Company MNO Q3 share activity:</p>
+        <ul>
+          <li>July 1: 25,000,000 shares</li>
+          <li>August 15: Issue 2,000,000 shares (total: 27,000,000)</li>
+          <li>September 30: 27,000,000 shares</li>
+        </ul>
+
+        <h3>Calculation</h3>
+        <p>Using days for precision (July has 31 days, August 15 days before issuance):</p>
+        <ul>
+          <li>July 1 - August 14: 25,000,000 x (45/92) = 12,228,261</li>
+          <li>August 15 - September 30: 27,000,000 x (47/92) = 13,793,478</li>
+          <li>Q3 Weighted Average: 26,021,739 shares</li>
+        </ul>
+
+        <p>For simplicity, many use monthly approximations:</p>
+        <ul>
+          <li>July (full month): 25,000,000 x (1/3) = 8,333,333</li>
+          <li>August (half month each): weighted calculation</li>
+          <li>September (full month): 27,000,000 x (1/3) = 9,000,000</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Where to Find Share Data</h2>
+        <p>Locate share count information in these financial statement locations:</p>
+
+        <h3>Balance Sheet</h3>
+        <p>The shareholders' equity section shows:</p>
+        <ul>
+          <li>Common shares authorized</li>
+          <li>Common shares issued</li>
+          <li>Treasury shares (shares repurchased)</li>
+          <li>Common shares outstanding (issued minus treasury)</li>
+        </ul>
+
+        <h3>Notes to Financial Statements</h3>
+        <p>Detailed equity notes disclose:</p>
+        <ul>
+          <li>Share activity during the period</li>
+          <li>Stock splits and dividends</li>
+          <li>Share repurchase programs</li>
+          <li>Option exercises and other issuances</li>
+        </ul>
+
+        <h3>Statement of Shareholders' Equity</h3>
+        <p>This statement shows all changes in equity accounts, including share count changes with dates and amounts.</p>
+
+        <h3>EPS Calculation Note</h3>
+        <p>Companies typically disclose the weighted average shares used in EPS calculations. You can use this to verify your independent calculation.</p>
+
+        <h3>SEC Filings</h3>
+        <ul>
+          <li><strong>10-K:</strong> Annual share data and full-year weighted average</li>
+          <li><strong>10-Q:</strong> Quarterly share data and quarter weighted average</li>
+          <li><strong>8-K:</strong> Material share events (major issuances, splits)</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Common Calculation Mistakes</h2>
+        <p>Avoid these frequent errors when calculating weighted average shares.</p>
+
+        <h3>Using End-of-Period Shares</h3>
+        <p>The most common mistake is using the ending share count instead of weighted average. This overstates or understates shares depending on whether the company issued or repurchased shares during the period.</p>
+
+        <h3>Forgetting Stock Split Adjustments</h3>
+        <p>All pre-split share counts must be adjusted. Forgetting this step produces incorrect weighted averages that don't reflect the current share structure.</p>
+
+        <h3>Incorrect Time Weights</h3>
+        <p>Common time weight errors include:</p>
+        <ul>
+          <li>Not ensuring weights sum to 1.0</li>
+          <li>Using wrong number of months/days</li>
+          <li>Counting the transaction month incorrectly</li>
+        </ul>
+
+        <h3>Missing Share Changes</h3>
+        <p>Review all potential sources of share changes:</p>
+        <ul>
+          <li>Secondary offerings</li>
+          <li>Employee stock option exercises</li>
+          <li>Restricted stock vesting</li>
+          <li>Acquisition-related issuances</li>
+          <li>Convertible securities conversions</li>
+          <li>Buyback programs</li>
+        </ul>
+
+        <h3>Mixing Basic and Diluted</h3>
+        <p>Keep basic and diluted calculations separate. The diluted weighted average includes additional potential shares from options and convertibles.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Impact on EPS</h2>
+        <p>Understanding how weighted average shares affect EPS helps interpret financial results.</p>
+
+        <h3>Higher Weighted Average = Lower EPS</h3>
+        <p>More shares in the denominator means lower EPS. Companies that issue significant shares during a period will show lower EPS than if shares had remained constant.</p>
+
+        <h3>Lower Weighted Average = Higher EPS</h3>
+        <p>Share buybacks reduce the weighted average, boosting EPS. This is why companies use buybacks to enhance EPS growth.</p>
+
+        <h3>Example Impact Analysis</h3>
+        <p>Company with $100 million net income:</p>
+        <ul>
+          <li>Beginning shares: 50 million (EPS if constant: $2.00)</li>
+          <li>With 10 million shares issued at mid-year: Weighted avg = 55 million, EPS = $1.82</li>
+          <li>With 5 million shares repurchased at mid-year: Weighted avg = 47.5 million, EPS = $2.11</li>
+        </ul>
+        <p>Share count changes can significantly impact reported EPS even with identical profits.</p>
+
+        <h3>Analyzing EPS Changes</h3>
+        <p>When EPS changes, determine how much comes from:</p>
+        <ul>
+          <li>Changes in net income (genuine business improvement)</li>
+          <li>Changes in share count (financial engineering)</li>
+        </ul>
+        <p>Compare net income growth to EPS growth. If EPS grows faster than net income, share buybacks are contributing.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Diluted Weighted Average Shares</h2>
+        <p>For diluted EPS, add potentially dilutive securities to the basic weighted average.</p>
+
+        <h3>Types of Dilutive Securities</h3>
+        <ul>
+          <li><strong>Stock options:</strong> Use treasury stock method</li>
+          <li><strong>Warrants:</strong> Use treasury stock method</li>
+          <li><strong>RSUs:</strong> Include expected to vest</li>
+          <li><strong>Convertible bonds:</strong> Include conversion shares if dilutive</li>
+          <li><strong>Convertible preferred:</strong> Include conversion shares if dilutive</li>
+        </ul>
+
+        <h3>Treasury Stock Method for Options</h3>
+        <div class="formula-box">
+          <code>Net Dilutive Shares = Options x (Stock Price - Exercise Price) / Stock Price</code>
+        </div>
+
+        <h3>Example</h3>
+        <ul>
+          <li>Basic weighted average: 20,000,000 shares</li>
+          <li>Stock options: 1,000,000 at $30 exercise (stock price $50)</li>
+          <li>Net dilutive shares: 1,000,000 x ($50-$30)/$50 = 400,000</li>
+          <li>Diluted weighted average: 20,400,000 shares</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Why use weighted average instead of ending shares?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Weighted average accurately reflects shares throughout the entire period. If a company issued half its shares in December, using year-end shares would understate EPS because those new shares weren't contributing to earnings all year. The weighted average ensures a fair calculation.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How do I handle mid-month transactions?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>For precision, use days instead of months. Alternatively, many analysts treat transactions as occurring at month-end or use half-month approximations. The company's own calculation in the EPS note shows their specific methodology.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do treasury shares count in weighted average?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>No, treasury shares (repurchased shares held by the company) are not counted in shares outstanding. The weighted average uses outstanding shares, which equals issued shares minus treasury shares.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How do stock splits affect historical comparisons?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Historical EPS and share counts should be retroactively adjusted for splits to enable fair comparisons. Financial databases typically show split-adjusted figures. A company that split 2-for-1 would show prior-year EPS halved and shares doubled for consistent comparison.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Where can I find the weighted average shares a company used?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Companies disclose the weighted average shares used for both basic and diluted EPS in the notes to financial statements, typically in the EPS calculation footnote. This shows the exact figures for the numerator and denominator of each EPS calculation.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Calculate Weighted Average Shares</h2>
+        <p>Use our free <a href="/">EPS Calculator</a> to compute earnings per share with proper weighted average share counts. Enter your share data, and the calculator handles the weighted average calculation automatically.</p>
+
+        <p>Understanding weighted average shares outstanding is essential for accurate EPS analysis. By properly accounting for share changes throughout reporting periods, you'll calculate and interpret EPS correctly for investment decisions.</p>
+      </section>
+
+    <section class="content-section">
+      <h2>Share Count Change Timeline</h2>
+      <p>A company's share count can change multiple times during a year. Here's a typical example of how events affect the weighted average:</p>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-date">January 1</div><div class="timeline-title">10,000,000 Shares Outstanding</div><div class="timeline-desc">Fiscal year begins with base share count from prior year-end</div></div>
+        <div class="timeline-item"><div class="timeline-date">March 15</div><div class="timeline-title">+500,000 New Shares Issued</div><div class="timeline-desc">Secondary offering raises capital for expansion. Count rises to 10,500,000</div></div>
+        <div class="timeline-item"><div class="timeline-date">July 1</div><div class="timeline-title">-200,000 Shares Repurchased</div><div class="timeline-desc">Board-approved buyback program begins. Count drops to 10,300,000</div></div>
+        <div class="timeline-item"><div class="timeline-date">October 15</div><div class="timeline-title">+100,000 Stock Options Exercised</div><div class="timeline-desc">Employee options converted to common shares. Count rises to 10,400,000</div></div>
+        <div class="timeline-item"><div class="timeline-date">December 31</div><div class="timeline-title">Weighted Average: ~10,308,333</div><div class="timeline-desc">Time-weighted calculation accounts for when each change occurred during the year</div></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Weighted Average Calculation Steps</h2>
+      <div class="steps-vertical">
+        <div class="step-v-item"><div class="step-v-number">1</div><div class="step-v-title">List All Share Changes</div><div class="step-v-desc">Identify every date during the period when shares were issued, repurchased, or converted.</div></div>
+        <div class="step-v-item"><div class="step-v-number">2</div><div class="step-v-title">Calculate Days Outstanding</div><div class="step-v-desc">For each share count period, determine how many days (or months) that count was in effect.</div></div>
+        <div class="step-v-item"><div class="step-v-number">3</div><div class="step-v-title">Weight Each Period</div><div class="step-v-desc">Multiply each share count by the fraction of the year it was outstanding (days/365 or months/12).</div></div>
+        <div class="step-v-item"><div class="step-v-number">4</div><div class="step-v-title">Sum the Weighted Amounts</div><div class="step-v-desc">Add all weighted share counts together to get the weighted average shares outstanding.</div></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Basic vs Diluted Share Counts</h2>
+      <div class="comparison-grid">
+        <div class="comparison-card highlighted">
+          <h4>Basic Shares</h4>
+          <div class="card-value">Lower</div>
+          <p>Only includes currently outstanding common shares, weighted by time held during the period</p>
+        </div>
+        <div class="comparison-card">
+          <h4>Diluted Shares</h4>
+          <div class="card-value">Higher</div>
+          <p>Adds net incremental shares from in-the-money options, warrants, and convertible securities</p>
+        </div>
+      </div>
+      <p>The diluted share count uses the treasury stock method for options (assuming proceeds are used to buy back shares at market price) and the if-converted method for convertible bonds and preferred stock.</p>
+    </section>
+
+    </article>
+  </div></main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a><p>Free earnings per share calculator for investors and analysts.</p></div>
+      <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Basic EPS</a></li><li><a href="/#panel-diluted">Diluted EPS</a></li><li><a href="/#panel-pe">P/E Ratio</a></li><li><a href="/#panel-growth">EPS Growth</a></li></ul></div>
+      <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/earnings-per-share-formula/">EPS Formula</a></li><li><a href="/blog/what-is-eps-in-stocks/">What is EPS?</a></li><li><a href="/blog/price-earnings-ratio-formula/">P/E Ratio</a></li></ul></div>
+      <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025-2026 EPS Calculator. For educational purposes only. Not financial advice.</p></div>
+  </div></footer>
+  <script src="/assets/js/calculator.js"></script>
+</body>
+</html>

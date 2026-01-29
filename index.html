@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPS Calculator - Earnings Per Share Formula & Calculator</title>
+  <meta name="description" content="Free EPS calculator. Calculate basic and diluted earnings per share, P/E ratio, and EPS growth rate. Includes formulas and examples.">
+  <meta property="og:title" content="EPS Calculator - Earnings Per Share Formula & Calculator">
+  <meta property="og:description" content="Free EPS calculator. Calculate basic and diluted earnings per share, P/E ratio, and EPS growth rate.">
+  <meta property="og:image" content="https://epscalculator.org/assets/images/og-image.png">
+  <meta property="og:url" content="https://epscalculator.org/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://epscalculator.org/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://epscalculator.org/#website",
+        "name": "EPS Calculator",
+        "url": "https://epscalculator.org/",
+        "description": "Free EPS calculator. Calculate basic and diluted earnings per share, P/E ratio, and EPS growth rate.",
+        "publisher": {
+          "@id": "https://epscalculator.org/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://epscalculator.org/blog/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://epscalculator.org/#organization",
+        "name": "EPS Calculator",
+        "url": "https://epscalculator.org/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://epscalculator.org/assets/images/favicon/android-chrome-512x512.png",
+          "width": 512,
+          "height": 512
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "info@epscalculator.org",
+          "url": "https://epscalculator.org/contact/"
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://epscalculator.org/#webpage",
+        "url": "https://epscalculator.org/",
+        "name": "EPS Calculator - Earnings Per Share Formula & Calculator",
+        "description": "Free EPS calculator. Calculate basic and diluted earnings per share, P/E ratio, and EPS growth rate. Includes formulas and examples.",
+        "isPartOf": {
+          "@id": "https://epscalculator.org/#website"
+        },
+        "about": {
+          "@id": "https://epscalculator.org/#application"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://epscalculator.org/assets/images/og-image.png"
+        },
+        "breadcrumb": {
+          "@id": "https://epscalculator.org/#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://epscalculator.org/#application"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".intro-text", "h1"]
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://epscalculator.org/#application",
+        "name": "EPS Calculator",
+        "alternateName": "Earnings Per Share Calculator",
+        "description": "Calculate basic EPS, diluted EPS, P/E ratio, and EPS growth rate. Free online calculator for stock analysis and investment decisions.",
+        "url": "https://epscalculator.org/",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Calculator",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript. Works in all modern browsers including Chrome, Firefox, Safari, and Edge.",
+        "softwareVersion": "1.0",
+        "permissions": "none",
+        "memoryRequirements": "Minimal",
+        "processorRequirements": "Any",
+        "releaseNotes": "Initial release with Basic EPS, Diluted EPS, P/E Ratio, and EPS Growth calculators.",
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://epscalculator.org/assets/images/og-image.png",
+          "caption": "EPS Calculator interface showing Basic EPS calculation tab"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2030-12-31"
+        },
+        "featureList": [
+          "Basic EPS calculation using net income, preferred dividends, and weighted average shares",
+          "Diluted EPS calculation accounting for stock options, warrants, and convertible securities",
+          "P/E Ratio calculation with earnings yield and fair value estimates at multiple multiples",
+          "EPS Growth Rate calculation with year-over-year and multi-year CAGR support",
+          "Real-time calculations performed entirely in the browser",
+          "No registration or login required",
+          "Privacy-focused: no data stored on servers",
+          "Mobile-responsive design",
+          "Displays underlying formulas for educational purposes"
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Individual investors, Finance students, Financial analysts, Business owners"
+        },
+        "creator": {
+          "@id": "https://epscalculator.org/#organization"
+        },
+        "publisher": {
+          "@id": "https://epscalculator.org/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://epscalculator.org/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://epscalculator.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Calculator"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://epscalculator.org/#howto-basic-eps",
+        "name": "How to Calculate Basic EPS",
+        "description": "Step-by-step guide to calculating Basic Earnings Per Share using the EPS Calculator.",
+        "totalTime": "PT2M",
+        "tool": {
+          "@type": "HowToTool",
+          "name": "EPS Calculator"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Enter Net Income",
+            "text": "Find the company's net income on the income statement and enter it in the Net Income field. Use quarterly figures for quarterly analysis or annual figures for annual analysis."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Enter Preferred Dividends",
+            "text": "If the company has preferred stock, enter the dividends paid to preferred shareholders. If there are no preferred dividends, leave this at zero."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Enter Weighted Average Shares",
+            "text": "Enter the weighted average number of common shares outstanding during the period. This figure is typically disclosed in financial reports or earnings statements."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Click Calculate",
+            "text": "Click the Calculate Basic EPS button to compute the earnings per share using the formula: (Net Income - Preferred Dividends) / Weighted Average Shares."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://epscalculator.org/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is EPS (Earnings Per Share)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EPS (Earnings Per Share) is a company's net profit divided by the number of outstanding shares. It shows how much money the company makes for each share of stock, making it easier to compare profitability across companies of different sizes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Basic and Diluted EPS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basic EPS uses only currently outstanding shares. Diluted EPS assumes all convertible securities (options, warrants, convertible bonds) are converted to shares, showing the worst-case scenario. Diluted EPS is always equal to or lower than Basic EPS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good EPS for a stock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There's no universal \"good\" EPS - it depends on the industry and stock price. A positive and growing EPS is generally favorable. More important is EPS growth rate, P/E ratio relative to peers, and consistency over time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use P/E ratio to value a stock?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The P/E ratio shows how much investors pay for $1 of earnings. Compare a stock's P/E to its industry average and historical P/E. A lower P/E might indicate undervaluation, while a higher P/E suggests growth expectations. Use P/E alongside other metrics for a complete picture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I find EPS data for a company?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EPS is reported in quarterly and annual earnings reports (10-Q and 10-K filings). You can find it on financial websites like Yahoo Finance, Google Finance, or the company's investor relations page. Both basic and diluted EPS are required disclosures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is earnings yield?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Earnings yield is the inverse of the P/E ratio, calculated as EPS divided by stock price, expressed as a percentage. It shows the percentage return you would receive if all earnings were paid as dividends. A higher earnings yield suggests better value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is CAGR and how is it used with EPS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CAGR (Compound Annual Growth Rate) measures the average annual growth rate over multiple years, smoothing out year-to-year volatility. For EPS analysis, CAGR shows the consistent annual growth rate that would produce the same total growth over the period."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header"><div class="container"><div class="header-inner">
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a>
+    <nav class="nav-desktop"><a href="/" class="active">Calculator</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+    <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div><nav class="nav-mobile"><a href="/">Calculator</a><a href="/blog/">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+
+  <main><div class="container">
+    <h1>EPS Calculator</h1>
+    <p class="intro-text">Calculate earnings per share (EPS), diluted EPS, P/E ratio, and EPS growth rate. Essential metrics for stock valuation and investment analysis.</p>
+    
+    <div class="calculator-card">
+      <div class="calc-tabs">
+        <button class="calc-tab active" data-tab="basic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span class="calc-tab-label">Basic EPS</span></button>
+        <button class="calc-tab" data-tab="diluted"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg><span class="calc-tab-label">Diluted EPS</span></button>
+        <button class="calc-tab" data-tab="pe"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="calc-tab-label">P/E Ratio</span></button>
+        <button class="calc-tab" data-tab="growth"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><span class="calc-tab-label">EPS Growth</span></button>
+      </div>
+      
+      <!-- BASIC EPS PANEL -->
+      <div id="panel-basic" class="calc-panel active">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Net Income</label>
+            <div class="input-prefix"><span>$</span><input type="number" id="net-income" class="form-input" value="10000000" step="1000"></div>
+            <span class="form-hint">Company's total net income (from income statement)</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Dividends</label>
+            <div class="input-prefix"><span>$</span><input type="number" id="preferred-div" class="form-input" value="0" step="1000"></div>
+            <span class="form-hint">Dividends paid to preferred shareholders (if any)</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Weighted Average Shares Outstanding</label>
+            <input type="number" id="shares-outstanding" class="form-input" value="5000000" step="1000">
+            <span class="form-hint">Average number of common shares during the period</span>
+          </div>
+        </div>
+        
+        <button class="calculate-btn" id="calc-basic-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Calculate Basic EPS
+        </button>
+        
+        <div class="results-section" id="basic-results">
+          <div class="result-primary">
+            <div class="result-label">Basic Earnings Per Share</div>
+            <div class="result-value" id="basic-eps-value">$0.00</div>
+            <div class="result-sublabel">per common share</div>
+          </div>
+
+          <!-- Key Results Grid -->
+          <div class="results-grid results-grid-4">
+            <div class="result-item"><div class="result-item-label">Earnings Available</div><div class="result-item-value" id="earnings-available">--</div></div>
+            <div class="result-item"><div class="result-item-label">Shares</div><div class="result-item-value" id="shares-display">--</div></div>
+            <div class="result-item"><div class="result-item-label">Net Income</div><div class="result-item-value" id="net-income-display">--</div></div>
+            <div class="result-item"><div class="result-item-label">Pref. Dividends</div><div class="result-item-value" id="pref-div-display">--</div></div>
+          </div>
+
+          <!-- Interpretation -->
+          <div class="result-interpretation" id="basic-interpretation">
+            <div class="result-interpretation-title">What This Means</div>
+            <p id="basic-interpretation-text">Each common share has earned this amount during the reporting period. Compare this to the stock price to assess valuation, or compare to previous periods to evaluate growth.</p>
+          </div>
+
+          <!-- Input Summary Table -->
+          <div class="result-table">
+            <h4 class="result-table-title">Your Inputs</h4>
+            <table>
+              <tr><td>Net Income</td><td class="value" id="basic-input-income">--</td></tr>
+              <tr><td>Preferred Dividends</td><td class="value" id="basic-input-prefdiv">--</td></tr>
+              <tr><td>Weighted Avg Shares</td><td class="value" id="basic-input-shares">--</td></tr>
+            </table>
+          </div>
+
+          <!-- Tips -->
+          <div class="result-tips">
+            <div class="result-tips-title">Key Considerations</div>
+            <div class="result-tips-grid">
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Compare to Stock Price</div>
+                  <div class="result-tip-text">Divide stock price by EPS to get P/E ratio for valuation context.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Track Over Time</div>
+                  <div class="result-tip-text">Growing EPS over multiple quarters/years indicates improving profitability.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Consider Diluted EPS</div>
+                  <div class="result-tip-text">If the company has stock options or convertibles, check diluted EPS for full picture.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Compare to Peers</div>
+                  <div class="result-tip-text">EPS varies by industry. Compare to similar companies for meaningful context.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula -->
+          <div class="formula-box"><code>Basic EPS = (Net Income − Preferred Dividends) ÷ Weighted Avg Shares</code></div>
+
+          <!-- Actions -->
+          <div class="result-actions">
+            <button class="result-action-btn" onclick="window.print()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print Results
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- DILUTED EPS PANEL -->
+      <div id="panel-diluted" class="calc-panel">
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Net Income</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="diluted-net-income" class="form-input" value="10000000"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Dividends</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="diluted-preferred-div" class="form-input" value="0"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Basic Shares Outstanding</label>
+              <input type="number" id="diluted-shares" class="form-input" value="5000000">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dilutive Securities (Options, Warrants)</label>
+              <input type="number" id="convertible-securities" class="form-input" value="500000">
+              <span class="form-hint">Additional shares from options, warrants, convertibles</span>
+            </div>
+          </div>
+        </div>
+        
+        <button class="calculate-btn" id="calc-diluted-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+          Calculate Diluted EPS
+        </button>
+        
+        <div class="results-section" id="diluted-results">
+          <div class="result-primary">
+            <div class="result-label">Diluted Earnings Per Share</div>
+            <div class="result-value" id="diluted-eps-value">$0.00</div>
+            <div class="result-sublabel">fully diluted basis</div>
+          </div>
+
+          <!-- Dilution Indicator Bar -->
+          <div class="result-indicator">
+            <div class="result-indicator-label">Dilution Impact</div>
+            <div class="result-indicator-bar">
+              <div class="result-indicator-fill neutral" id="dilution-bar" style="width: 0%"></div>
+            </div>
+            <div class="result-indicator-labels">
+              <span>0% (No dilution)</span>
+              <span>25%+ (Significant)</span>
+            </div>
+          </div>
+
+          <!-- Key Results Grid -->
+          <div class="results-grid results-grid-4">
+            <div class="result-item"><div class="result-item-label">Basic EPS</div><div class="result-item-value" id="basic-eps-compare">--</div></div>
+            <div class="result-item"><div class="result-item-label">Diluted Shares</div><div class="result-item-value" id="diluted-shares-display">--</div></div>
+            <div class="result-item"><div class="result-item-label">Dilution Effect</div><div class="result-item-value" id="dilution-effect">--</div></div>
+            <div class="result-item"><div class="result-item-label">EPS Reduction</div><div class="result-item-value" id="eps-reduction">--</div></div>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="result-table">
+            <h4 class="result-table-title">Basic vs Diluted Comparison</h4>
+            <table>
+              <thead><tr><th>Metric</th><th>Basic</th><th>Diluted</th><th>Difference</th></tr></thead>
+              <tbody>
+                <tr><td>EPS</td><td class="value" id="comp-basic-eps">--</td><td class="value" id="comp-diluted-eps">--</td><td class="value" id="comp-eps-diff">--</td></tr>
+                <tr><td>Share Count</td><td class="value" id="comp-basic-shares">--</td><td class="value" id="comp-diluted-shares">--</td><td class="value" id="comp-shares-diff">--</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Interpretation -->
+          <div class="result-interpretation" id="diluted-interpretation">
+            <div class="result-interpretation-title">What This Means</div>
+            <p id="diluted-interpretation-text">Diluted EPS shows the worst-case scenario if all convertible securities (options, warrants, convertible bonds) were exercised. A large gap between basic and diluted EPS indicates significant potential dilution for shareholders.</p>
+          </div>
+
+          <!-- Tips -->
+          <div class="result-tips">
+            <div class="result-tips-title">Key Considerations</div>
+            <div class="result-tips-grid">
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Watch High Dilution</div>
+                  <div class="result-tip-text">Dilution over 10% may significantly impact future shareholder value.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Tech Companies</div>
+                  <div class="result-tip-text">Stock-based compensation is common in tech; always check diluted EPS.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Future Dilution</div>
+                  <div class="result-tip-text">More options grants = more future dilution. Check SEC filings for details.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Use for Valuation</div>
+                  <div class="result-tip-text">Calculate P/E using diluted EPS for more conservative valuation.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula -->
+          <div class="formula-box"><code>Diluted EPS = (Net Income − Pref Div) ÷ (Basic Shares + Dilutive Securities)</code></div>
+
+          <!-- Actions -->
+          <div class="result-actions">
+            <button class="result-action-btn" onclick="window.print()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print Results
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- P/E RATIO PANEL -->
+      <div id="panel-pe" class="calc-panel">
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Stock Price</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="stock-price" class="form-input" value="50" step="0.01"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Earnings Per Share (EPS)</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="pe-eps" class="form-input" value="2.50" step="0.01"></div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="calculate-btn" id="calc-pe-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/></svg>
+          Calculate P/E Ratio
+        </button>
+        
+        <div class="results-section" id="pe-results">
+          <div class="result-primary">
+            <div class="result-label">Price-to-Earnings Ratio</div>
+            <div class="result-value" id="pe-value">0.00</div>
+            <div class="result-sublabel" id="pe-interpretation">--</div>
+          </div>
+
+          <!-- P/E Range Indicator -->
+          <div class="result-indicator">
+            <div class="result-indicator-label">P/E Valuation Range</div>
+            <div class="result-indicator-bar" style="position:relative">
+              <div style="position:absolute;left:0;width:25%;height:100%;background:var(--success);opacity:0.3"></div>
+              <div style="position:absolute;left:25%;width:25%;height:100%;background:var(--success);opacity:0.15"></div>
+              <div style="position:absolute;left:50%;width:25%;height:100%;background:var(--warning);opacity:0.2"></div>
+              <div style="position:absolute;left:75%;width:25%;height:100%;background:var(--error);opacity:0.2"></div>
+              <div class="result-indicator-marker" id="pe-marker" style="left:50%"></div>
+            </div>
+            <div class="result-indicator-labels">
+              <span>0</span>
+              <span>10</span>
+              <span>20</span>
+              <span>30</span>
+              <span>40+</span>
+            </div>
+          </div>
+
+          <!-- Key Results Grid -->
+          <div class="results-grid results-grid-3">
+            <div class="result-item"><div class="result-item-label">Earnings Yield</div><div class="result-item-value" id="earnings-yield">--</div></div>
+            <div class="result-item"><div class="result-item-label">Stock Price</div><div class="result-item-value" id="pe-stock-price">--</div></div>
+            <div class="result-item"><div class="result-item-label">EPS</div><div class="result-item-value" id="pe-eps-display">--</div></div>
+          </div>
+
+          <!-- Fair Value Table -->
+          <div class="result-table">
+            <h4 class="result-table-title">Fair Value at Different P/E Ratios</h4>
+            <table>
+              <thead><tr><th>P/E Multiple</th><th>Fair Value</th><th>vs Current</th><th>Implication</th></tr></thead>
+              <tbody>
+                <tr><td>P/E 10 (Value)</td><td class="value" id="fair-10">--</td><td id="fair-10-diff">--</td><td class="reference">Deep value / Distressed</td></tr>
+                <tr><td>P/E 15 (Below Avg)</td><td class="value" id="fair-15">--</td><td id="fair-15-diff">--</td><td class="reference">Value territory</td></tr>
+                <tr><td>P/E 20 (Average)</td><td class="value" id="fair-20">--</td><td id="fair-20-diff">--</td><td class="reference">S&P 500 historical avg</td></tr>
+                <tr><td>P/E 25 (Growth)</td><td class="value" id="fair-25">--</td><td id="fair-25-diff">--</td><td class="reference">Growth premium</td></tr>
+                <tr><td>P/E 30 (High Growth)</td><td class="value" id="fair-30">--</td><td id="fair-30-diff">--</td><td class="reference">High growth expectations</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Interpretation -->
+          <div class="result-interpretation" id="pe-interpret-box">
+            <div class="result-interpretation-title">What This Means</div>
+            <p id="pe-interpret-text">The P/E ratio shows how much investors are willing to pay for each dollar of earnings. A higher P/E suggests investors expect higher future growth, while a lower P/E may indicate undervaluation or concerns about the business.</p>
+          </div>
+
+          <!-- Context Reference -->
+          <div class="result-table">
+            <h4 class="result-table-title">P/E Context Reference</h4>
+            <table>
+              <thead><tr><th>P/E Range</th><th>Category</th><th>Typical Sectors</th></tr></thead>
+              <tbody>
+                <tr><td>&lt; 10</td><td>Low / Value</td><td class="reference">Banks, Energy, Utilities</td></tr>
+                <tr><td>10 - 20</td><td>Average</td><td class="reference">Industrials, Consumer Staples</td></tr>
+                <tr><td>20 - 30</td><td>Above Average</td><td class="reference">Healthcare, Consumer Discretionary</td></tr>
+                <tr><td>&gt; 30</td><td>High / Growth</td><td class="reference">Technology, Biotech</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tips -->
+          <div class="result-tips">
+            <div class="result-tips-title">Key Considerations</div>
+            <div class="result-tips-grid">
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Compare to Peers</div>
+                  <div class="result-tip-text">P/E varies by industry. Compare to similar companies for meaningful context.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Historical P/E</div>
+                  <div class="result-tip-text">Compare to the stock's own historical P/E range for relative value.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Growth Justifies P/E</div>
+                  <div class="result-tip-text">High P/E is acceptable if earnings are growing rapidly (PEG ratio).</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Earnings Quality</div>
+                  <div class="result-tip-text">Ensure EPS is sustainable. One-time gains can distort P/E calculations.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula -->
+          <div class="formula-box"><code>P/E Ratio = Stock Price ÷ EPS &nbsp;|&nbsp; Earnings Yield = EPS ÷ Price × 100</code></div>
+
+          <!-- Actions -->
+          <div class="result-actions">
+            <button class="result-action-btn" onclick="window.print()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print Results
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- EPS GROWTH PANEL -->
+      <div id="panel-growth" class="calc-panel">
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Current EPS</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="current-eps" class="form-input" value="3.50" step="0.01"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Previous EPS</label>
+              <div class="input-prefix"><span>$</span><input type="number" id="previous-eps" class="form-input" value="2.80" step="0.01"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Number of Years</label>
+            <select id="growth-years" class="form-select">
+              <option value="1">1 Year (YoY Growth)</option>
+              <option value="3">3 Years (CAGR)</option>
+              <option value="5">5 Years (CAGR)</option>
+              <option value="10">10 Years (CAGR)</option>
+            </select>
+            <span class="form-hint">For CAGR, enter EPS from that many years ago as "Previous EPS"</span>
+          </div>
+        </div>
+        
+        <button class="calculate-btn" id="calc-growth-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+          Calculate EPS Growth
+        </button>
+        
+        <div class="results-section" id="growth-results">
+          <div class="result-primary">
+            <div class="result-label" id="growth-label">EPS Growth Rate</div>
+            <div class="result-value result-positive" id="growth-value">+0.0%</div>
+            <div class="result-sublabel" id="growth-sublabel">year-over-year</div>
+          </div>
+
+          <!-- Growth Indicator Bar -->
+          <div class="result-indicator">
+            <div class="result-indicator-label">Growth Classification</div>
+            <div class="result-indicator-bar" style="position:relative">
+              <div style="position:absolute;left:0;width:20%;height:100%;background:var(--error);opacity:0.2"></div>
+              <div style="position:absolute;left:20%;width:20%;height:100%;background:var(--warning);opacity:0.15"></div>
+              <div style="position:absolute;left:40%;width:20%;height:100%;background:var(--gray-300);opacity:0.3"></div>
+              <div style="position:absolute;left:60%;width:20%;height:100%;background:var(--success);opacity:0.15"></div>
+              <div style="position:absolute;left:80%;width:20%;height:100%;background:var(--success);opacity:0.3"></div>
+              <div class="result-indicator-marker" id="growth-marker" style="left:50%"></div>
+            </div>
+            <div class="result-indicator-labels">
+              <span>-20%</span>
+              <span>-10%</span>
+              <span>0%</span>
+              <span>+10%</span>
+              <span>+20%+</span>
+            </div>
+          </div>
+
+          <!-- Key Results Grid -->
+          <div class="results-grid results-grid-4">
+            <div class="result-item"><div class="result-item-label">CAGR</div><div class="result-item-value" id="cagr-value">--</div></div>
+            <div class="result-item"><div class="result-item-label">Current EPS</div><div class="result-item-value" id="current-eps-display">--</div></div>
+            <div class="result-item"><div class="result-item-label">Previous EPS</div><div class="result-item-value" id="previous-eps-display">--</div></div>
+            <div class="result-item"><div class="result-item-label">Projected (5yr)</div><div class="result-item-value" id="projected-eps">--</div></div>
+          </div>
+
+          <!-- Projections Table -->
+          <div class="result-table">
+            <h4 class="result-table-title">EPS Projections at Current Growth Rate</h4>
+            <table>
+              <thead><tr><th>Year</th><th>Projected EPS</th><th>Growth from Today</th></tr></thead>
+              <tbody>
+                <tr><td>Year 1</td><td class="value" id="proj-y1">--</td><td id="proj-y1-pct">--</td></tr>
+                <tr><td>Year 2</td><td class="value" id="proj-y2">--</td><td id="proj-y2-pct">--</td></tr>
+                <tr><td>Year 3</td><td class="value" id="proj-y3">--</td><td id="proj-y3-pct">--</td></tr>
+                <tr><td>Year 5</td><td class="value" id="proj-y5">--</td><td id="proj-y5-pct">--</td></tr>
+                <tr><td>Year 10</td><td class="value" id="proj-y10">--</td><td id="proj-y10-pct">--</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Interpretation -->
+          <div class="result-interpretation" id="growth-interpretation">
+            <div class="result-interpretation-title">What This Means</div>
+            <p id="growth-interpretation-text">This growth rate shows how the company's earnings per share have changed over time. Consistent positive growth typically indicates a healthy, expanding business.</p>
+          </div>
+
+          <!-- Growth Context Table -->
+          <div class="result-table">
+            <h4 class="result-table-title">Growth Rate Context</h4>
+            <table>
+              <thead><tr><th>Growth Rate</th><th>Classification</th><th>Typical Characteristics</th></tr></thead>
+              <tbody>
+                <tr><td>Negative</td><td>Declining</td><td class="reference">Earnings contraction, business challenges</td></tr>
+                <tr><td>0% - 5%</td><td>Slow Growth</td><td class="reference">Mature business, stable industry</td></tr>
+                <tr><td>5% - 15%</td><td>Moderate Growth</td><td class="reference">Healthy growth, market performers</td></tr>
+                <tr><td>15% - 25%</td><td>Strong Growth</td><td class="reference">Outperformers, expanding market share</td></tr>
+                <tr><td>&gt; 25%</td><td>High Growth</td><td class="reference">High-growth companies, often tech/biotech</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tips -->
+          <div class="result-tips">
+            <div class="result-tips-title">Key Considerations</div>
+            <div class="result-tips-grid">
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Check Consistency</div>
+                  <div class="result-tip-text">One strong year isn't enough. Look for consistent multi-year growth trends.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">PEG Ratio</div>
+                  <div class="result-tip-text">Divide P/E by growth rate. PEG under 1 may indicate undervaluation.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Projections Are Estimates</div>
+                  <div class="result-tip-text">Future projections assume constant growth. Reality will differ.</div>
+                </div>
+              </div>
+              <div class="result-tip">
+                <div class="result-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <div class="result-tip-content">
+                  <div class="result-tip-title">Revenue vs EPS Growth</div>
+                  <div class="result-tip-text">Compare EPS growth to revenue growth to assess quality of earnings growth.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula -->
+          <div class="formula-box"><code>Growth Rate = (Current − Previous) ÷ |Previous| × 100<br>CAGR = (Current/Previous)^(1/years) − 1</code></div>
+
+          <!-- Actions -->
+          <div class="result-actions">
+            <button class="result-action-btn" onclick="window.print()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print Results
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Use This Calculator -->
+    <section class="content-section">
+      <h2>How to Use This Calculator</h2>
+      <p>This calculator provides four specialized tools for analyzing earnings per share metrics. Each tab is designed for a specific calculation, and all computations happen instantly in your browser. Here's how to use each one:</p>
+
+      <h3>Basic EPS Calculator</h3>
+      <ol>
+        <li><strong>Enter Net Income:</strong> Find the company's net income on the income statement. This is the bottom-line profit after all expenses, interest, and taxes. For quarterly analysis, use the quarter's net income; for annual analysis, use the full-year figure.</li>
+        <li><strong>Enter Preferred Dividends:</strong> If the company has preferred stock, enter the dividends paid to preferred shareholders. This amount gets subtracted because EPS measures earnings available to common shareholders. If there are no preferred dividends, leave this at zero.</li>
+        <li><strong>Enter Weighted Average Shares:</strong> Use the weighted average number of common shares outstanding during the period, not the current share count. This figure accounts for any shares issued or repurchased during the period and is typically disclosed in the notes to financial statements or the earnings report.</li>
+        <li><strong>Click Calculate:</strong> The calculator instantly computes Basic EPS by subtracting preferred dividends from net income and dividing by the weighted average shares.</li>
+      </ol>
+
+      <h3>Diluted EPS Calculator</h3>
+      <ol>
+        <li><strong>Enter Net Income and Preferred Dividends:</strong> Same as Basic EPS - the company's net income and any preferred dividends paid.</li>
+        <li><strong>Enter Basic Shares Outstanding:</strong> The weighted average common shares outstanding (same as Basic EPS calculation).</li>
+        <li><strong>Enter Dilutive Securities:</strong> Add the number of additional shares that would be created if all convertible securities were converted. This includes in-the-money stock options, warrants, convertible bonds, and convertible preferred stock. Companies disclose this in their financial statements.</li>
+        <li><strong>Click Calculate:</strong> The calculator shows both Basic and Diluted EPS, plus the dilution percentage so you can see how much potential dilution affects earnings per share.</li>
+      </ol>
+
+      <h3>P/E Ratio Calculator</h3>
+      <ol>
+        <li><strong>Enter Stock Price:</strong> The current market price per share. Use the most recent closing price for consistency.</li>
+        <li><strong>Enter EPS:</strong> You can use trailing twelve-month (TTM) EPS for historical analysis, or forward EPS estimates for forward-looking valuation. Be consistent in your approach.</li>
+        <li><strong>Click Calculate:</strong> The calculator returns the P/E ratio, earnings yield (the inverse of P/E expressed as a percentage), and fair value estimates at different P/E multiples (10, 15, 20, and 25). The interpretation helps contextualize whether the P/E is relatively low, average, or high compared to historical norms.</li>
+      </ol>
+
+      <h3>EPS Growth Calculator</h3>
+      <ol>
+        <li><strong>Enter Current EPS:</strong> The most recent earnings per share figure (quarterly or annual, depending on your analysis).</li>
+        <li><strong>Enter Previous EPS:</strong> The EPS from the comparison period. For year-over-year growth, use EPS from one year ago. For multi-year CAGR, use EPS from 3, 5, or 10 years ago.</li>
+        <li><strong>Select Time Period:</strong> Choose 1 year for simple year-over-year growth, or 3, 5, or 10 years to calculate compound annual growth rate (CAGR).</li>
+        <li><strong>Click Calculate:</strong> The calculator shows the total growth percentage, CAGR (for multi-year periods), and a 5-year projection based on the historical growth rate.</li>
+      </ol>
+    </section>
+
+    <!-- Real-World Examples -->
+    <section class="content-section">
+      <h2>Real-World Examples</h2>
+      <p>These examples demonstrate how to use the EPS calculator with realistic scenarios. All figures are hypothetical and for illustration purposes only.</p>
+
+      <h3>Example 1: Basic EPS for a Large-Cap Company</h3>
+      <p><strong>Scenario:</strong> A technology company reports annual net income of $25 billion with no preferred stock. The weighted average shares outstanding is 4.5 billion shares.</p>
+      <p><strong>Calculation:</strong> ($25,000,000,000 - $0) ÷ 4,500,000,000 = <strong>$5.56 Basic EPS</strong></p>
+      <p><strong>Interpretation:</strong> Each common share earned $5.56 during the year. This figure alone doesn't tell you if the stock is cheap or expensive - you need to compare it to the stock price using the P/E ratio.</p>
+
+      <h3>Example 2: Basic EPS with Preferred Dividends</h3>
+      <p><strong>Scenario:</strong> A utility company has net income of $800 million and pays $50 million in preferred dividends. There are 200 million common shares outstanding.</p>
+      <p><strong>Calculation:</strong> ($800,000,000 - $50,000,000) ÷ 200,000,000 = <strong>$3.75 Basic EPS</strong></p>
+      <p><strong>Interpretation:</strong> After paying preferred shareholders, common shareholders have claim to $3.75 per share in earnings. Note how preferred dividends reduce the EPS available to common shareholders.</p>
+
+      <h3>Example 3: Diluted EPS with Stock Options</h3>
+      <p><strong>Scenario:</strong> A software company has net income of $500 million, no preferred dividends, and 100 million basic shares. The company has granted 10 million in-the-money stock options that could be exercised.</p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Basic EPS: $500,000,000 ÷ 100,000,000 = <strong>$5.00</strong></li>
+        <li>Diluted EPS: $500,000,000 ÷ 110,000,000 = <strong>$4.55</strong></li>
+        <li>Dilution: 9.1% reduction in EPS</li>
+      </ul>
+      <p><strong>Interpretation:</strong> If all options are exercised, EPS drops by nearly 10%. This is significant dilution that investors should consider, especially for companies with large stock option programs.</p>
+
+      <h3>Example 4: P/E Ratio Analysis</h3>
+      <p><strong>Scenario:</strong> A retail stock trades at $45 per share with trailing twelve-month EPS of $2.25.</p>
+      <p><strong>Calculation:</strong> $45.00 ÷ $2.25 = <strong>P/E of 20</strong></p>
+      <p><strong>Interpretation:</strong> Investors are paying $20 for every $1 of earnings. This is roughly in line with historical S&P 500 averages. The earnings yield is 5% ($2.25 ÷ $45). At a P/E of 15, fair value would be $33.75; at a P/E of 25, fair value would be $56.25.</p>
+
+      <h3>Example 5: Comparing P/E Ratios Across Industries</h3>
+      <p><strong>Scenario:</strong> You're comparing two stocks:</p>
+      <ul>
+        <li>Growth tech company: Price $150, EPS $3.00 → P/E = 50</li>
+        <li>Mature bank: Price $40, EPS $4.00 → P/E = 10</li>
+      </ul>
+      <p><strong>Interpretation:</strong> The tech company's high P/E reflects growth expectations - investors expect earnings to grow rapidly. The bank's low P/E reflects its mature, slower-growth profile. Neither is inherently "better" - context matters. Compare P/E to industry peers and the company's own historical P/E.</p>
+
+      <h3>Example 6: Year-Over-Year EPS Growth</h3>
+      <p><strong>Scenario:</strong> A consumer goods company had EPS of $4.20 last year and $4.62 this year.</p>
+      <p><strong>Calculation:</strong> ($4.62 - $4.20) ÷ $4.20 × 100 = <strong>+10% YoY Growth</strong></p>
+      <p><strong>Interpretation:</strong> Earnings grew 10% year-over-year, indicating solid operational performance. Compare this to the company's historical growth rate and industry peers to assess whether growth is accelerating or decelerating.</p>
+
+      <h3>Example 7: Multi-Year CAGR Calculation</h3>
+      <p><strong>Scenario:</strong> A healthcare company had EPS of $2.00 five years ago and $3.22 today.</p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Total Growth: ($3.22 - $2.00) ÷ $2.00 = 61%</li>
+        <li>CAGR: ($3.22 ÷ $2.00)^(1/5) - 1 = <strong>10% annual growth</strong></li>
+      </ul>
+      <p><strong>Interpretation:</strong> The company grew EPS at a compound annual rate of 10% over five years. At this rate, projected EPS in 5 more years would be approximately $5.19. CAGR smooths out year-to-year volatility and shows the underlying growth trend.</p>
+
+      <h3>Example 8: Negative EPS Analysis</h3>
+      <p><strong>Scenario:</strong> A startup company reports a net loss of $50 million with 25 million shares outstanding.</p>
+      <p><strong>Calculation:</strong> -$50,000,000 ÷ 25,000,000 = <strong>-$2.00 EPS (Loss)</strong></p>
+      <p><strong>Interpretation:</strong> Negative EPS means the company lost $2.00 per share. P/E ratios are not meaningful for companies with negative earnings. For unprofitable companies, analysts typically use other metrics like Price-to-Sales or Price-to-Book.</p>
+
+      <h3>Example 9: EPS Turnaround</h3>
+      <p><strong>Scenario:</strong> A company went from EPS of -$1.50 last year to +$0.75 this year.</p>
+      <p><strong>Calculation:</strong> ($0.75 - (-$1.50)) ÷ |-$1.50| × 100 = <strong>+150% Growth</strong></p>
+      <p><strong>Interpretation:</strong> The company swung from loss to profit - a significant turnaround. While the percentage growth is dramatic, be cautious interpreting growth rates when the base year had negative earnings. Focus on the direction and sustainability of profitability.</p>
+    </section>
+
+    <!-- When to Use This Calculator -->
+    <section class="content-section">
+      <h2>When to Use This Calculator</h2>
+      <p>EPS and related metrics are fundamental to stock analysis. Here are specific situations where this calculator proves valuable:</p>
+
+      <h3>Researching a Stock Before Buying</h3>
+      <p>Before investing in any stock, understanding its earnings per share is essential. Use the Basic EPS calculator to see how much profit the company generates per share, then use the P/E calculator to determine whether the current stock price represents reasonable value. Compare the P/E ratio to industry averages and the company's historical P/E to contextualize the valuation.</p>
+
+      <h3>Analyzing Quarterly Earnings Reports</h3>
+      <p>When a company releases quarterly earnings, use this calculator to verify the reported EPS figures and understand their components. Check whether the company met, beat, or missed analyst expectations. Calculate the year-over-year EPS growth to see if earnings are trending upward or downward compared to the same quarter last year.</p>
+
+      <h3>Comparing Multiple Investment Options</h3>
+      <p>When deciding between several stocks, EPS metrics provide a standardized way to compare profitability. Calculate the P/E ratio for each stock you're considering, then compare not just the ratios but also the EPS growth rates. A stock with a higher P/E might be justified if it's growing earnings faster than cheaper alternatives.</p>
+
+      <h3>Evaluating Employee Stock Options</h3>
+      <p>If your employer grants stock options or RSUs, understanding diluted EPS helps you assess potential dilution. Use the Diluted EPS calculator to see how your options (and everyone else's) affect earnings per share. Significant dilution can impact stock price appreciation over time.</p>
+
+      <h3>Screening Stocks for Value Investing</h3>
+      <p>Value investors often screen for stocks with low P/E ratios as potential bargains. Use the P/E calculator to identify stocks trading below historical averages or below industry peers. Remember that a low P/E alone doesn't guarantee value - investigate why the market is pricing the stock cheaply.</p>
+
+      <h3>Tracking Portfolio Holdings</h3>
+      <p>For stocks you already own, regularly checking EPS trends helps monitor investment thesis. Use the EPS Growth calculator to track whether earnings are growing as expected. Declining EPS growth might signal deteriorating fundamentals and warrant closer scrutiny.</p>
+
+      <h3>Building Financial Models</h3>
+      <p>When creating stock valuation models, EPS projections form the foundation of many approaches. Use the EPS Growth calculator to determine historical CAGR, which can serve as a baseline for projecting future earnings. The P/E calculator helps convert those EPS projections into price targets.</p>
+
+      <h3>Completing Academic Assignments</h3>
+      <p>Finance and accounting students frequently need to calculate EPS metrics for coursework. This calculator provides quick, accurate results while displaying the underlying formulas, helping you verify manual calculations and understand the methodology behind each metric.</p>
+    </section>
+
+    <!-- Understanding P/E Ratio Ranges -->
+    <section class="content-section">
+      <h2>Understanding P/E Ratio Ranges</h2>
+      <p>The price-to-earnings ratio is one of the most widely used valuation metrics, but interpreting it requires context. The table below provides general guidelines for P/E interpretation, based on historical market data and typical investor expectations.</p>
+
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>P/E Range</th>
+              <th>Classification</th>
+              <th>Earnings Yield</th>
+              <th>What It Typically Indicates</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Below 10</strong></td>
+              <td>Low / Potentially Undervalued</td>
+              <td>Above 10%</td>
+              <td>May indicate undervaluation, declining business, cyclical low, or market pessimism. Common in mature industries like banking, energy, and utilities.</td>
+            </tr>
+            <tr>
+              <td><strong>10 - 15</strong></td>
+              <td>Below Average</td>
+              <td>6.7% - 10%</td>
+              <td>Generally considered reasonable value. Typical for stable, slower-growth companies with consistent earnings.</td>
+            </tr>
+            <tr>
+              <td><strong>15 - 20</strong></td>
+              <td>Average / Fair Value</td>
+              <td>5% - 6.7%</td>
+              <td>Roughly in line with historical S&P 500 average. Reflects moderate growth expectations and reasonable valuation.</td>
+            </tr>
+            <tr>
+              <td><strong>20 - 30</strong></td>
+              <td>Above Average</td>
+              <td>3.3% - 5%</td>
+              <td>Indicates above-average growth expectations. Investors are paying a premium for anticipated earnings growth.</td>
+            </tr>
+            <tr>
+              <td><strong>30 - 50</strong></td>
+              <td>High / Growth Premium</td>
+              <td>2% - 3.3%</td>
+              <td>High growth expectations baked into the price. Common for technology and high-growth companies.</td>
+            </tr>
+            <tr>
+              <td><strong>Above 50</strong></td>
+              <td>Very High / Speculative</td>
+              <td>Below 2%</td>
+              <td>Extremely high growth expectations or temporarily depressed earnings. Requires significant future growth to justify current price.</td>
+            </tr>
+            <tr>
+              <td><strong>Negative or N/A</strong></td>
+              <td>Not Applicable</td>
+              <td>N/A</td>
+              <td>Company has negative earnings (net loss). P/E ratio is not meaningful; use Price-to-Sales or other metrics instead.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Important caveats:</strong> These ranges are general guidelines, not absolute rules. A "high" P/E might be justified for a rapidly growing company, while a "low" P/E might reflect genuine problems. Always compare P/E to: (1) the company's historical P/E, (2) industry peers, and (3) the overall market. Consider also whether you're using trailing P/E (based on past earnings) or forward P/E (based on estimated future earnings).</p>
+    </section>
+
+    <!-- Industry P/E Benchmarks -->
+    <section class="content-section">
+      <h2>Industry P/E Benchmarks</h2>
+      <p>Different industries tend to trade at different P/E multiples due to varying growth prospects, capital intensity, and risk profiles. The table below shows typical P/E ranges by sector. These are approximate ranges and vary with market conditions.</p>
+
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Industry Sector</th>
+              <th>Typical P/E Range</th>
+              <th>Characteristics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Technology (Software)</strong></td>
+              <td>25 - 50+</td>
+              <td>High growth potential, scalable business models, significant R&D investment. Investors pay premium for growth.</td>
+            </tr>
+            <tr>
+              <td><strong>Healthcare / Biotech</strong></td>
+              <td>20 - 40</td>
+              <td>Growth potential from drug pipelines and aging demographics. High variability based on pipeline success.</td>
+            </tr>
+            <tr>
+              <td><strong>Consumer Discretionary</strong></td>
+              <td>15 - 30</td>
+              <td>Cyclical earnings tied to consumer spending. Strong brands may command premium valuations.</td>
+            </tr>
+            <tr>
+              <td><strong>Industrial / Manufacturing</strong></td>
+              <td>15 - 25</td>
+              <td>Cyclical with economic conditions. Capital-intensive businesses with moderate growth expectations.</td>
+            </tr>
+            <tr>
+              <td><strong>Consumer Staples</strong></td>
+              <td>15 - 25</td>
+              <td>Defensive, stable earnings. Lower growth but consistent performance through economic cycles.</td>
+            </tr>
+            <tr>
+              <td><strong>Financial Services</strong></td>
+              <td>10 - 18</td>
+              <td>Interest rate sensitive, regulated industry. Typically lower P/E due to cyclical nature and regulatory risks.</td>
+            </tr>
+            <tr>
+              <td><strong>Energy (Oil & Gas)</strong></td>
+              <td>8 - 15</td>
+              <td>Highly cyclical, commodity-price dependent. Low P/E reflects earnings volatility and capital intensity.</td>
+            </tr>
+            <tr>
+              <td><strong>Utilities</strong></td>
+              <td>12 - 20</td>
+              <td>Regulated, stable earnings. Bond-like characteristics with dividend focus. Limited growth but predictable.</td>
+            </tr>
+            <tr>
+              <td><strong>Real Estate (REITs)</strong></td>
+              <td>15 - 25</td>
+              <td>Income-focused, interest rate sensitive. P/E less relevant; FFO (Funds From Operations) often used instead.</td>
+            </tr>
+            <tr>
+              <td><strong>Telecommunications</strong></td>
+              <td>10 - 20</td>
+              <td>Capital-intensive, mature industry with moderate growth. Significant dividend yields common.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>How to use these benchmarks:</strong> When analyzing a stock, compare its P/E to its sector average. A bank trading at P/E 20 is expensive relative to peers, while a software company at P/E 20 might be cheap. Also compare to the specific company's historical P/E range to identify whether it's trading above or below its own norms.</p>
+    </section>
+
+    <!-- EPS Quality Indicators -->
+    <section class="content-section">
+      <h2>EPS Quality Indicators</h2>
+      <p>Not all earnings are created equal. High-quality earnings are sustainable, repeatable, and backed by actual cash flow. Low-quality earnings may be inflated by one-time events, aggressive accounting, or non-cash items. Here's how to assess EPS quality:</p>
+
+      <h3>Signs of High-Quality EPS</h3>
+      <ul>
+        <li><strong>Backed by operating cash flow:</strong> Compare EPS to cash flow per share. If operating cash flow consistently exceeds or closely matches net income, earnings are being converted to real cash.</li>
+        <li><strong>Consistent and predictable:</strong> High-quality earnings show steady growth patterns without wild swings. Look for companies that meet or beat estimates consistently over multiple quarters.</li>
+        <li><strong>Driven by revenue growth:</strong> EPS growth that comes from actual revenue increases is more sustainable than growth from cost-cutting alone or financial engineering.</li>
+        <li><strong>Low reliance on non-operating income:</strong> Earnings from core business operations are more reliable than gains from asset sales, investment income, or other one-time sources.</li>
+        <li><strong>Conservative accounting policies:</strong> Companies using conservative revenue recognition, depreciation methods, and inventory accounting tend to report more reliable earnings.</li>
+      </ul>
+
+      <h3>Warning Signs of Low-Quality EPS</h3>
+      <ul>
+        <li><strong>Growing gap between earnings and cash flow:</strong> If net income is rising but operating cash flow is flat or declining, earnings may not be sustainable.</li>
+        <li><strong>Frequent "one-time" adjustments:</strong> Companies that repeatedly exclude "non-recurring" charges may be masking ongoing problems.</li>
+        <li><strong>Rising accounts receivable:</strong> Receivables growing faster than revenue can indicate aggressive revenue recognition or collection problems.</li>
+        <li><strong>Inventory buildup:</strong> Inventory growing faster than sales may signal demand problems and future write-downs.</li>
+        <li><strong>Large gap between GAAP and non-GAAP EPS:</strong> Significant differences suggest the company wants you to ignore substantial expenses.</li>
+        <li><strong>Declining margins:</strong> EPS growing solely from revenue while margins compress may indicate competitive pressure.</li>
+      </ul>
+
+      <h3>Key Ratios to Check</h3>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Quality Metric</th>
+              <th>Formula</th>
+              <th>What to Look For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cash Flow to Net Income</strong></td>
+              <td>Operating Cash Flow ÷ Net Income</td>
+              <td>Ratio above 1.0 indicates earnings are backed by cash. Below 0.8 consistently is a warning sign.</td>
+            </tr>
+            <tr>
+              <td><strong>Accrual Ratio</strong></td>
+              <td>(Net Income - Cash Flow) ÷ Total Assets</td>
+              <td>Lower is better. High positive accruals may indicate earnings management.</td>
+            </tr>
+            <tr>
+              <td><strong>Receivables Turnover</strong></td>
+              <td>Revenue ÷ Average Accounts Receivable</td>
+              <td>Declining turnover may signal collection problems or aggressive revenue recognition.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Common EPS Adjustments -->
+    <section class="content-section">
+      <h2>Common EPS Adjustments: GAAP vs. Non-GAAP</h2>
+      <p>Companies report both GAAP (Generally Accepted Accounting Principles) EPS and adjusted or "non-GAAP" EPS. Understanding the difference is crucial for accurate analysis.</p>
+
+      <h3>GAAP EPS</h3>
+      <p>GAAP EPS follows standardized accounting rules and includes all revenues and expenses. This is the official EPS figure that companies must report in their SEC filings. GAAP EPS provides consistency and comparability across companies because everyone follows the same rules.</p>
+
+      <h3>Non-GAAP (Adjusted) EPS</h3>
+      <p>Non-GAAP EPS excludes certain items that management considers non-representative of ongoing operations. While this can provide useful insight into "core" earnings, it also allows companies significant discretion in presenting a more favorable picture.</p>
+
+      <h3>Common Adjustments Made to Non-GAAP EPS</h3>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Adjustment Type</th>
+              <th>Typically Excluded From Non-GAAP</th>
+              <th>Your Assessment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Stock-Based Compensation</strong></td>
+              <td>Cost of employee stock options and RSUs</td>
+              <td>Real cost that dilutes shareholders. Excluding it overstates profitability, especially for tech companies.</td>
+            </tr>
+            <tr>
+              <td><strong>Amortization of Intangibles</strong></td>
+              <td>Amortization of acquired intangible assets</td>
+              <td>Non-cash charge from past acquisitions. Reasonable to exclude for comparing operations, but represents real cost of acquisitions.</td>
+            </tr>
+            <tr>
+              <td><strong>Restructuring Charges</strong></td>
+              <td>Severance, facility closures, reorganization costs</td>
+              <td>Can be legitimate one-time items, but "serial restructurers" use this excuse repeatedly.</td>
+            </tr>
+            <tr>
+              <td><strong>Acquisition-Related Costs</strong></td>
+              <td>Legal fees, integration costs, deal expenses</td>
+              <td>One-time for specific deals, but serial acquirers always have these "one-time" costs.</td>
+            </tr>
+            <tr>
+              <td><strong>Impairment Charges</strong></td>
+              <td>Write-downs of goodwill or assets</td>
+              <td>Reflects poor past decisions. Important to understand why assets lost value.</td>
+            </tr>
+            <tr>
+              <td><strong>Litigation Settlements</strong></td>
+              <td>Legal settlements and related costs</td>
+              <td>May be genuinely one-time, but frequent legal issues suggest operational problems.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Best Practice for Investors</h3>
+      <p>Look at both GAAP and non-GAAP EPS. Use GAAP for conservative analysis and cross-company comparisons. Use non-GAAP to understand management's view of core operations. If the gap between GAAP and non-GAAP is large and persistent, be skeptical - real businesses have real expenses. Calculate what percentage of GAAP earnings the adjustments represent; if adjustments routinely exceed 20-30% of GAAP earnings, scrutinize them carefully.</p>
+    </section>
+
+    <!-- EPS Formula Reference -->
+    <section class="content-section">
+      <h2>EPS Formula Reference</h2>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead><tr><th>Metric</th><th>Formula</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Basic EPS</strong></td><td>(Net Income − Preferred Dividends) ÷ Avg Shares</td><td>Standard earnings per share</td></tr>
+            <tr><td><strong>Diluted EPS</strong></td><td>(Net Income − Pref Div) ÷ (Shares + Dilutive)</td><td>Worst-case EPS with all conversions</td></tr>
+            <tr><td><strong>P/E Ratio</strong></td><td>Stock Price ÷ EPS</td><td>Valuation multiple</td></tr>
+            <tr><td><strong>Earnings Yield</strong></td><td>EPS ÷ Stock Price × 100</td><td>Return on stock price (inverse P/E)</td></tr>
+            <tr><td><strong>Forward P/E</strong></td><td>Price ÷ Estimated Future EPS</td><td>Valuation based on projections</td></tr>
+            <tr><td><strong>EPS Growth</strong></td><td>(New EPS − Old EPS) ÷ Old EPS × 100</td><td>Year-over-year earnings growth</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">What is EPS (Earnings Per Share)?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p>EPS (Earnings Per Share) is a company's net profit divided by the number of outstanding shares. It shows how much money the company makes for each share of stock, making it easier to compare profitability across companies of different sizes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is the difference between Basic and Diluted EPS?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p><strong>Basic EPS</strong> uses only currently outstanding shares. <strong>Diluted EPS</strong> assumes all convertible securities (options, warrants, convertible bonds) are converted to shares, showing the worst-case scenario. Diluted EPS is always equal to or lower than Basic EPS.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is a good EPS for a stock?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p>There's no universal "good" EPS - it depends on the industry and stock price. A positive and growing EPS is generally favorable. More important is EPS growth rate, P/E ratio relative to peers, and consistency over time.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I use P/E ratio to value a stock?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p>The P/E ratio shows how much investors pay for $1 of earnings. Compare a stock's P/E to its industry average and historical P/E. A lower P/E might indicate undervaluation, while a higher P/E suggests growth expectations. Use P/E alongside other metrics for a complete picture.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Where do I find EPS data for a company?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p>EPS is reported in quarterly and annual earnings reports (10-Q and 10-K filings). You can find it on financial websites like Yahoo Finance, Google Finance, or the company's investor relations page. Both basic and diluted EPS are required disclosures.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="content-section">
+      <h2>Related Guides</h2>
+      <p>Explore our in-depth guides to deepen your understanding of earnings per share and related financial metrics:</p>
+
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3><a href="/blog/earnings-per-share-formula/">The Complete Guide to the EPS Formula</a></h3>
+          <p>Master the earnings per share formula with detailed explanations, step-by-step calculations, and practical examples. Learn how accountants and analysts calculate basic and diluted EPS.</p>
+        </div>
+
+        <div class="guide-card">
+          <h3><a href="/blog/what-is-eps-in-stocks/">What is EPS in Stocks? A Beginner's Guide</a></h3>
+          <p>New to investing? This guide explains what EPS means, why it matters for stock valuation, and how to use it when evaluating potential investments.</p>
+        </div>
+
+        <div class="guide-card">
+          <h3><a href="/blog/price-earnings-ratio-formula/">Understanding the P/E Ratio Formula</a></h3>
+          <p>Learn how the price-to-earnings ratio works, what different P/E levels mean, and how to use this essential valuation metric in your investment analysis.</p>
+        </div>
+
+        <div class="guide-card">
+          <h3><a href="/blog/diluted-eps-formula/">Diluted EPS Explained: Stock Options & Convertibles</a></h3>
+          <p>Understand how stock options, warrants, and convertible securities affect earnings per share. Essential knowledge for analyzing tech companies and startups.</p>
+        </div>
+
+        <div class="guide-card">
+          <h3><a href="/blog/eps-growth-rate-formula/">How to Calculate and Interpret EPS Growth Rate</a></h3>
+          <p>Discover how to measure earnings growth, calculate CAGR, and assess whether a company's earnings trajectory supports its current valuation.</p>
+        </div>
+
+        <div class="guide-card">
+          <h3><a href="/blog/trailing-vs-forward-pe/">Trailing vs Forward P/E: Which Should You Use?</a></h3>
+          <p>Compare trailing twelve-month P/E with forward P/E ratios. Learn when each is appropriate and how to use both in your analysis.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem"><a href="/blog/">View all guides →</a></p>
+    </section>
+
+    <!-- S&P 500 EPS by Year -->
+    <section class="content-section">
+      <h2>S&P 500 EPS by Year</h2>
+      <p>Historical earnings per share for the S&P 500 index show how corporate profitability has trended over time. This data helps investors understand earnings cycles and set realistic expectations.</p>
+      <div class="table-responsive">
+        <table class="data-table striped colored-header">
+          <thead><tr><th>Year</th><th>S&P 500 EPS</th><th>YoY Change</th><th>P/E Ratio</th><th>Index Close</th></tr></thead>
+          <tbody>
+            <tr><td>2024</td><td>$241.15</td><td class="positive">+10.2%</td><td>24.8x</td><td>5,881</td></tr>
+            <tr><td>2023</td><td>$218.84</td><td class="positive">+0.9%</td><td>22.3x</td><td>4,770</td></tr>
+            <tr><td>2022</td><td>$216.96</td><td class="negative">-4.7%</td><td>17.9x</td><td>3,840</td></tr>
+            <tr><td>2021</td><td>$227.66</td><td class="positive">+70.1%</td><td>21.0x</td><td>4,766</td></tr>
+            <tr><td>2020</td><td>$133.84</td><td class="negative">-17.3%</td><td>27.5x</td><td>3,756</td></tr>
+            <tr><td>2019</td><td>$161.83</td><td class="negative">-0.2%</td><td>19.8x</td><td>3,231</td></tr>
+            <tr><td>2018</td><td>$162.09</td><td class="positive">+23.5%</td><td>15.4x</td><td>2,507</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The S&P 500 EPS chart below visualizes annual earnings levels, making it easy to spot recession impacts (2020) and post-recovery surges (2021).</p>
+      <div class="bar-chart">
+        <div class="bar-chart-item"><span class="bar-chart-label">2024</span><div class="bar-chart-track"><div class="bar-chart-fill blue" style="width:100%">$241.15</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2023</span><div class="bar-chart-track"><div class="bar-chart-fill blue" style="width:91%">$218.84</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2022</span><div class="bar-chart-track"><div class="bar-chart-fill blue" style="width:90%">$216.96</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2021</span><div class="bar-chart-track"><div class="bar-chart-fill green" style="width:94%">$227.66</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2020</span><div class="bar-chart-track"><div class="bar-chart-fill orange" style="width:56%">$133.84</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2019</span><div class="bar-chart-track"><div class="bar-chart-fill blue" style="width:67%">$161.83</div></div></div>
+        <div class="bar-chart-item"><span class="bar-chart-label">2018</span><div class="bar-chart-track"><div class="bar-chart-fill blue" style="width:67%">$162.09</div></div></div>
+      </div>
+    </section>
+
+    <!-- EPS by Sector -->
+    <section class="content-section">
+      <h2>EPS by Sector</h2>
+      <p>Different sectors produce vastly different earnings levels. Understanding these differences is critical when comparing companies across industries.</p>
+      <div class="donut-chart-wrapper">
+        <div class="donut-chart" style="background: conic-gradient(#1e3a5f 0deg 94deg, #2d5a8a 94deg 152deg, #10b981 152deg 209deg, #f59e0b 209deg 252deg, #ef4444 252deg 288deg, #6366f1 288deg 317deg, #8b5cf6 317deg 338deg, #ec4899 338deg 360deg);">
+          <div class="donut-chart-hole"><span class="donut-total">100%</span><span class="donut-label">S&P 500</span></div>
+        </div>
+        <div class="donut-chart-legend">
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#1e3a5f"></span>Technology<span class="donut-legend-value">26%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#2d5a8a"></span>Healthcare<span class="donut-legend-value">16%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#10b981"></span>Financials<span class="donut-legend-value">16%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#f59e0b"></span>Cons. Disc.<span class="donut-legend-value">12%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#ef4444"></span>Industrials<span class="donut-legend-value">10%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#6366f1"></span>Communication<span class="donut-legend-value">8%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#8b5cf6"></span>Energy<span class="donut-legend-value">6%</span></div>
+          <div class="donut-legend-item"><span class="donut-legend-color" style="background:#ec4899"></span>Other<span class="donut-legend-value">6%</span></div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="data-table compact striped">
+          <thead><tr><th>Sector</th><th>Avg EPS</th><th>Avg P/E</th><th>5Y EPS Growth</th></tr></thead>
+          <tbody>
+            <tr><td>Technology</td><td>$8.45</td><td>32.1x</td><td class="positive">+18.2%</td></tr>
+            <tr><td>Healthcare</td><td>$6.12</td><td>22.4x</td><td class="positive">+9.5%</td></tr>
+            <tr><td>Financials</td><td>$9.87</td><td>13.2x</td><td class="positive">+11.3%</td></tr>
+            <tr><td>Consumer Discretionary</td><td>$5.34</td><td>27.8x</td><td class="positive">+14.7%</td></tr>
+            <tr><td>Industrials</td><td>$7.21</td><td>21.5x</td><td class="positive">+8.9%</td></tr>
+            <tr><td>Energy</td><td>$11.56</td><td>11.8x</td><td class="negative">-2.1%</td></tr>
+            <tr><td>Utilities</td><td>$3.45</td><td>17.2x</td><td class="positive">+4.3%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Share Buybacks Impact -->
+    <section class="content-section">
+      <h2>How Share Buybacks Inflate EPS</h2>
+      <p>Companies in the S&P 500 spend hundreds of billions annually on share repurchases, which reduce the share count and mechanically boost EPS even when net income is flat.</p>
+      <div class="stat-cards">
+        <div class="stat-card accent"><div class="stat-card-value">$934B</div><div class="stat-card-label">2024 Buybacks</div><div class="stat-card-desc">S&P 500 total share repurchases</div></div>
+        <div class="stat-card green-accent"><div class="stat-card-value">2.3%</div><div class="stat-card-label">Avg EPS Boost</div><div class="stat-card-desc">Annual EPS lift from buybacks alone</div></div>
+        <div class="stat-card warning-accent"><div class="stat-card-value">71%</div><div class="stat-card-label">Companies Buying</div><div class="stat-card-desc">S&P 500 firms with active buybacks</div></div>
+        <div class="stat-card accent"><div class="stat-card-value">$6.3T</div><div class="stat-card-label">Since 2012</div><div class="stat-card-desc">Cumulative buybacks over 12 years</div></div>
+      </div>
+      <div class="takeaway-box">
+        <h4>Key Takeaway</h4>
+        <ul>
+          <li>Buybacks boost EPS by reducing the denominator (shares outstanding), not by increasing actual earnings</li>
+          <li>Always compare net income growth alongside EPS growth to spot buyback-driven inflation</li>
+          <li>Companies funded by debt-financed buybacks may face risk if interest rates remain high</li>
+          <li>Check the cash flow statement to see if buybacks are funded by operations or borrowing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How to Analyze Any Stock's EPS -->
+    <section class="content-section">
+      <h2>How to Analyze Any Stock's EPS</h2>
+      <p>Follow this five-step framework to evaluate any company's earnings quality before making investment decisions.</p>
+      <div class="steps-flow">
+        <div class="step-item"><div class="step-number">1</div><div class="step-content"><div class="step-title">Get the Data</div><div class="step-desc">Pull net income and share count from the 10-K filing</div></div></div>
+        <div class="step-item"><div class="step-number">2</div><div class="step-content"><div class="step-title">Calculate EPS</div><div class="step-desc">Compute both basic and diluted EPS</div></div></div>
+        <div class="step-item"><div class="step-number">3</div><div class="step-content"><div class="step-title">Check the Trend</div><div class="step-desc">Compare 3-5 years of EPS history for consistency</div></div></div>
+        <div class="step-item"><div class="step-number">4</div><div class="step-content"><div class="step-title">Compare Peers</div><div class="step-desc">Benchmark EPS and P/E against industry competitors</div></div></div>
+        <div class="step-item"><div class="step-number">5</div><div class="step-content"><div class="step-title">Assess Quality</div><div class="step-desc">Verify earnings are backed by operating cash flow</div></div></div>
+      </div>
+    </section>
+
+    <!-- Continue Learning -->
+    <section class="content-section">
+      <h2>Continue Learning</h2>
+      <p>EPS is just one piece of the fundamental analysis puzzle. These authoritative resources can help you develop a more complete understanding of financial statement analysis and stock valuation:</p>
+
+      <h3>Official Data Sources</h3>
+      <ul>
+        <li><strong>SEC EDGAR:</strong> The official database for all public company filings. Access 10-K (annual) and 10-Q (quarterly) reports directly from the source at sec.gov.</li>
+        <li><strong>Company Investor Relations:</strong> Most public companies maintain investor relations pages with earnings releases, presentations, and financial data.</li>
+        <li><strong>Financial Data Providers:</strong> Services like Yahoo Finance, Google Finance, and Bloomberg provide EPS data, analyst estimates, and historical financials.</li>
+      </ul>
+
+      <h3>Educational Resources</h3>
+      <ul>
+        <li><strong>Investopedia:</strong> Comprehensive financial education covering EPS, P/E ratios, and all aspects of fundamental analysis.</li>
+        <li><strong>CFA Institute:</strong> Professional-level resources on equity analysis, financial statement analysis, and valuation methodologies.</li>
+        <li><strong>Khan Academy:</strong> Free courses covering accounting fundamentals and financial statement analysis.</li>
+      </ul>
+
+      <h3>Books for Deeper Study</h3>
+      <ul>
+        <li><em>The Intelligent Investor</em> by Benjamin Graham - The classic text on value investing and fundamental analysis.</li>
+        <li><em>Financial Statement Analysis</em> by Martin Fridson - Detailed coverage of how to read and interpret financial statements.</li>
+        <li><em>Security Analysis</em> by Graham and Dodd - The comprehensive guide to analyzing securities based on fundamentals.</li>
+      </ul>
+    </section>
+
+    <!-- Questions CTA -->
+    <section class="content-section" style="text-align:center">
+      <h2>Questions About This Calculator?</h2>
+      <p>If you have questions about how to use this calculator, found a bug, or have suggestions for improvement, we'd love to hear from you.</p>
+      <p style="margin:1.5rem 0"><a href="/contact/" class="calculate-btn" style="display:inline-flex;width:auto;padding:0 2rem;text-decoration:none">Contact Us</a></p>
+      <p style="font-size:0.875rem;color:var(--gray-500);margin-bottom:0">Learn more about how this calculator works on our <a href="/about/">About page</a>.</p>
+    </section>
+  </div></main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a><p>Free earnings per share calculator for investors and analysts.</p></div>
+      <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Basic EPS</a></li><li><a href="/#panel-diluted">Diluted EPS</a></li><li><a href="/#panel-pe">P/E Ratio</a></li><li><a href="/#panel-growth">EPS Growth</a></li></ul></div>
+      <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/earnings-per-share-formula/">EPS Formula</a></li><li><a href="/blog/what-is-eps-in-stocks/">What is EPS?</a></li><li><a href="/blog/price-earnings-ratio-formula/">P/E Ratio</a></li></ul></div>
+      <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025-2026 EPS Calculator. For educational purposes only. Not financial advice.</p></div>
+  </div></footer>
+  <script src="/assets/js/calculator.js"></script>
+</body>
+</html>

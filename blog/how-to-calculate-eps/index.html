@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Calculate EPS: Step-by-Step Earnings Per Share Guide (2025)</title>
+  <meta name="description" content="Learn how to calculate EPS step-by-step. Complete guide to computing earnings per share from financial statements with real examples and practical tips.">
+  <meta property="og:title" content="How to Calculate EPS: Step-by-Step Earnings Per Share Guide">
+  <meta property="og:description" content="Learn how to calculate EPS step-by-step from financial statements.">
+  <meta property="og:image" content="https://epscalculator.org/assets/images/og-image.png">
+  <meta property="og:url" content="https://epscalculator.org/blog/how-to-calculate-eps/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://epscalculator.org/blog/how-to-calculate-eps/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="header"><div class="container"><div class="header-inner">
+    <a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a>
+    <nav class="nav-desktop"><a href="/">Calculator</a><a href="/blog/" class="active">Guides</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
+    <button class="nav-toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div></div></header>
+
+  <main><div class="container content-narrow">
+    <article>
+      <h1>How to Calculate EPS: Step-by-Step Earnings Per Share Guide</h1>
+      <p class="intro-text">Learning how to calculate EPS is an essential skill for stock analysis. This practical guide walks through each step of the calculation process, from finding the data in financial statements to computing both basic and diluted earnings per share.</p>
+
+      <section class="content-section">
+        <h2>Understanding the EPS Calculation</h2>
+        <p>Earnings per share (EPS) measures a company's profit allocated to each outstanding share of common stock. Before diving into the calculation steps, let's understand what we're trying to accomplish.</p>
+
+        <p>The EPS formula answers a simple question: how much profit did the company generate for each share of stock? This normalizes profits for comparison purposes. A company earning $100 million with 50 million shares generates $2.00 per share, making it comparable to other companies regardless of their size.</p>
+
+        <p>Two types of EPS are commonly calculated:</p>
+        <ul>
+          <li><strong>Basic EPS:</strong> Uses only currently outstanding shares</li>
+          <li><strong>Diluted EPS:</strong> Includes potential shares from options, convertibles, etc.</li>
+        </ul>
+
+        <p>This guide covers both calculations step by step.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 1: Find Net Income</h2>
+        <p>Net income is the starting point for EPS calculation. It represents the company's total profit after all expenses, interest, and taxes.</p>
+
+        <h3>Where to Find Net Income</h3>
+        <p>Net income appears at the bottom of the income statement (also called the statement of operations or profit and loss statement). Look for terms like:</p>
+        <ul>
+          <li>Net Income</li>
+          <li>Net Profit</li>
+          <li>Net Earnings</li>
+          <li>Profit After Tax</li>
+        </ul>
+
+        <h3>Which Income Statement to Use</h3>
+        <p>For public companies, income statements are available in:</p>
+        <ul>
+          <li><strong>10-K filing:</strong> Annual report with full-year figures</li>
+          <li><strong>10-Q filing:</strong> Quarterly reports</li>
+          <li><strong>Earnings press releases:</strong> Preliminary figures</li>
+          <li><strong>Company investor relations website:</strong> Links to all filings</li>
+        </ul>
+
+        <p>For annual EPS, use the full-year net income. For quarterly EPS, use that quarter's net income. For trailing twelve months (TTM) EPS, sum the four most recent quarters.</p>
+
+        <h3>Example: Finding Net Income</h3>
+        <p>Company XYZ's Income Statement (simplified):</p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead><tr><th>Line Item</th><th>Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Revenue</td><td>$500,000,000</td></tr>
+              <tr><td>Cost of Goods Sold</td><td>($300,000,000)</td></tr>
+              <tr><td>Gross Profit</td><td>$200,000,000</td></tr>
+              <tr><td>Operating Expenses</td><td>($100,000,000)</td></tr>
+              <tr><td>Operating Income</td><td>$100,000,000</td></tr>
+              <tr><td>Interest Expense</td><td>($10,000,000)</td></tr>
+              <tr><td>Income Before Taxes</td><td>$90,000,000</td></tr>
+              <tr><td>Income Taxes</td><td>($22,500,000)</td></tr>
+              <tr><td><strong>Net Income</strong></td><td><strong>$67,500,000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Net income for this company is $67,500,000.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 2: Identify Preferred Dividends</h2>
+        <p>If the company has preferred stock, you must subtract preferred dividends from net income. Basic EPS measures earnings available to common shareholders only.</p>
+
+        <h3>Where to Find Preferred Dividend Information</h3>
+        <p>Look for preferred dividend information in:</p>
+        <ul>
+          <li>Income statement (sometimes listed below net income)</li>
+          <li>Notes to financial statements</li>
+          <li>Shareholders' equity section of the balance sheet</li>
+          <li>The EPS calculation note (companies often disclose the components)</li>
+        </ul>
+
+        <h3>Types of Preferred Dividends</h3>
+        <p>Preferred dividends may be:</p>
+        <ul>
+          <li><strong>Cumulative:</strong> Accrue even if not declared; always subtract</li>
+          <li><strong>Non-cumulative:</strong> Only subtract if declared and paid</li>
+        </ul>
+
+        <h3>Example</h3>
+        <p>If Company XYZ has preferred stock with $2,500,000 in annual dividends:</p>
+        <p>Earnings available to common = $67,500,000 - $2,500,000 = $65,000,000</p>
+
+        <p>If the company has no preferred stock, skip this step and use net income directly.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 3: Calculate Weighted Average Shares Outstanding</h2>
+        <p>The share count used in EPS is not simply the current number of shares. It's the weighted average that accounts for changes throughout the reporting period.</p>
+
+        <h3>Why Weighted Average?</h3>
+        <p>Shares outstanding change during the year due to:</p>
+        <ul>
+          <li>New share issuances (equity offerings, acquisitions)</li>
+          <li>Share repurchases (buybacks)</li>
+          <li>Stock option exercises</li>
+          <li>Stock splits or reverse splits</li>
+        </ul>
+
+        <p>The weighted average ensures shares are counted proportionally to the time they were outstanding.</p>
+
+        <h3>Where to Find Share Count Data</h3>
+        <ul>
+          <li><strong>Balance sheet:</strong> Shows end-of-period shares</li>
+          <li><strong>Notes to financial statements:</strong> Details share changes</li>
+          <li><strong>EPS calculation note:</strong> Often provides weighted average directly</li>
+          <li><strong>Statement of shareholders' equity:</strong> Shows all share activity</li>
+        </ul>
+
+        <h3>How to Calculate Weighted Average</h3>
+        <p>For each period with a constant share count:</p>
+        <ol>
+          <li>Determine the share count</li>
+          <li>Determine the fraction of the year</li>
+          <li>Multiply shares by time fraction</li>
+          <li>Sum all weighted amounts</li>
+        </ol>
+
+        <h3>Example: Annual Weighted Average</h3>
+        <p>Company XYZ's share activity:</p>
+        <ul>
+          <li>January 1: 20,000,000 shares outstanding</li>
+          <li>April 1: Issued 4,000,000 new shares (total: 24,000,000)</li>
+          <li>October 1: Repurchased 2,000,000 shares (total: 22,000,000)</li>
+          <li>December 31: 22,000,000 shares outstanding</li>
+        </ul>
+
+        <p>Calculation:</p>
+        <ul>
+          <li>Jan-Mar (3 months): 20,000,000 x (3/12) = 5,000,000</li>
+          <li>Apr-Sep (6 months): 24,000,000 x (6/12) = 12,000,000</li>
+          <li>Oct-Dec (3 months): 22,000,000 x (3/12) = 5,500,000</li>
+          <li><strong>Weighted Average:</strong> 5,000,000 + 12,000,000 + 5,500,000 = <strong>22,500,000 shares</strong></li>
+        </ul>
+
+        <h3>Stock Split Adjustment</h3>
+        <p>If a stock split occurs, retroactively adjust all prior share counts. For a 2-for-1 split mid-year:</p>
+        <ul>
+          <li>Pre-split shares: multiply by 2</li>
+          <li>Post-split shares: use actual count</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 4: Calculate Basic EPS</h2>
+        <p>With all components identified, apply the basic EPS formula:</p>
+
+        <div class="formula-box">
+          <code>Basic EPS = (Net Income - Preferred Dividends) / Weighted Average Shares Outstanding</code>
+        </div>
+
+        <h3>Example Calculation</h3>
+        <p>Using Company XYZ's data:</p>
+        <ul>
+          <li>Net Income: $67,500,000</li>
+          <li>Preferred Dividends: $2,500,000</li>
+          <li>Weighted Average Shares: 22,500,000</li>
+        </ul>
+
+        <div class="formula-box">
+          <code>Basic EPS = ($67,500,000 - $2,500,000) / 22,500,000 = $65,000,000 / 22,500,000 = $2.89</code>
+        </div>
+
+        <p>Company XYZ's basic EPS is $2.89 per share.</p>
+
+        <h3>Quarterly EPS Calculation</h3>
+        <p>For quarterly EPS, use that quarter's net income, preferred dividends, and weighted average shares for that quarter specifically.</p>
+
+        <p>Example quarterly calculation:</p>
+        <ul>
+          <li>Q3 Net Income: $18,000,000</li>
+          <li>Q3 Preferred Dividends: $625,000</li>
+          <li>Q3 Weighted Average Shares: 23,000,000</li>
+        </ul>
+
+        <div class="formula-box">
+          <code>Q3 EPS = ($18,000,000 - $625,000) / 23,000,000 = $0.76</code>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 5: Identify Dilutive Securities</h2>
+        <p>For diluted EPS, you need to identify securities that could become common shares. These include:</p>
+
+        <h3>Stock Options and Warrants</h3>
+        <p>Look for disclosures about:</p>
+        <ul>
+          <li>Employee stock options</li>
+          <li>Stock appreciation rights</li>
+          <li>Warrants issued to investors</li>
+        </ul>
+        <p>Find the number outstanding, exercise prices, and weighted average exercise price in the stock compensation notes.</p>
+
+        <h3>Restricted Stock Units (RSUs)</h3>
+        <p>RSUs convert to common stock when they vest. Find outstanding RSUs in compensation disclosures.</p>
+
+        <h3>Convertible Securities</h3>
+        <p>Review notes for:</p>
+        <ul>
+          <li>Convertible bonds (face value, interest rate, conversion ratio)</li>
+          <li>Convertible preferred stock (dividend rate, conversion ratio)</li>
+        </ul>
+
+        <h3>Where to Find This Information</h3>
+        <ul>
+          <li>Notes to financial statements</li>
+          <li>Stock-based compensation section</li>
+          <li>Long-term debt section (for convertibles)</li>
+          <li>Equity section</li>
+          <li>EPS calculation footnote (often provides summary)</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 6: Calculate Dilutive Shares from Options</h2>
+        <p>Stock options use the treasury stock method to determine net dilution.</p>
+
+        <h3>The Treasury Stock Method</h3>
+        <ol>
+          <li>Assume all in-the-money options are exercised</li>
+          <li>Calculate proceeds received (options x exercise price)</li>
+          <li>Assume proceeds buy back shares at average stock price</li>
+          <li>Net dilution = shares issued - shares repurchased</li>
+        </ol>
+
+        <div class="formula-box">
+          <code>Net Dilutive Shares = Options x (Average Stock Price - Exercise Price) / Average Stock Price</code>
+        </div>
+
+        <h3>Example</h3>
+        <p>Company XYZ option data:</p>
+        <ul>
+          <li>Options outstanding: 3,000,000</li>
+          <li>Weighted average exercise price: $20</li>
+          <li>Average stock price during period: $40</li>
+        </ul>
+
+        <p>Calculation:</p>
+        <ul>
+          <li>Shares if exercised: 3,000,000</li>
+          <li>Proceeds: 3,000,000 x $20 = $60,000,000</li>
+          <li>Shares repurchased: $60,000,000 / $40 = 1,500,000</li>
+          <li>Net dilutive shares: 3,000,000 - 1,500,000 = 1,500,000</li>
+        </ul>
+
+        <p>Or using the shortcut formula:</p>
+        <p>Net dilutive = 3,000,000 x ($40 - $20) / $40 = 3,000,000 x 0.5 = 1,500,000</p>
+
+        <h3>Out-of-the-Money Options</h3>
+        <p>If the exercise price exceeds the stock price, options are out-of-the-money and excluded from diluted EPS (they're anti-dilutive).</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 7: Calculate Dilution from Convertible Securities</h2>
+        <p>Convertible bonds and preferred stock require additional steps because converting them also affects the numerator (income).</p>
+
+        <h3>Convertible Bonds</h3>
+        <p>If convertible bonds are dilutive:</p>
+        <ol>
+          <li>Add back after-tax interest to the numerator</li>
+          <li>Add conversion shares to the denominator</li>
+        </ol>
+
+        <p>After-tax interest = Interest expense x (1 - Tax rate)</p>
+
+        <h3>Example: Convertible Bond</h3>
+        <p>Company XYZ convertible bond data:</p>
+        <ul>
+          <li>Face value: $50,000,000</li>
+          <li>Interest rate: 4%</li>
+          <li>Annual interest: $2,000,000</li>
+          <li>Tax rate: 25%</li>
+          <li>Converts to: 2,000,000 shares</li>
+        </ul>
+
+        <p>After-tax interest: $2,000,000 x (1 - 0.25) = $1,500,000</p>
+
+        <p>Check if dilutive by calculating incremental EPS:</p>
+        <p>Incremental EPS = $1,500,000 / 2,000,000 = $0.75</p>
+
+        <p>If basic EPS is $2.89 and incremental EPS is $0.75, the bonds ARE dilutive (because $0.75 < $2.89).</p>
+
+        <h3>Convertible Preferred Stock</h3>
+        <p>If convertible preferred is dilutive:</p>
+        <ol>
+          <li>Add back preferred dividends to the numerator</li>
+          <li>Add conversion shares to the denominator</li>
+        </ol>
+
+        <p>Then test if dilutive by comparing incremental EPS to basic EPS.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 8: Calculate Diluted EPS</h2>
+        <p>Combine all dilutive elements to calculate diluted EPS:</p>
+
+        <div class="formula-box">
+          <code>Diluted EPS = (Adjusted Net Income) / (Basic Shares + All Dilutive Shares)</code>
+        </div>
+
+        <h3>Complete Example</h3>
+        <p>Company XYZ diluted EPS calculation:</p>
+
+        <p><strong>Adjusted Numerator:</strong></p>
+        <ul>
+          <li>Net income: $67,500,000</li>
+          <li>Less preferred dividends: $2,500,000</li>
+          <li>Plus convertible bond interest (after-tax): $1,500,000</li>
+          <li><strong>Adjusted net income: $66,500,000</strong></li>
+        </ul>
+
+        <p><strong>Adjusted Denominator:</strong></p>
+        <ul>
+          <li>Weighted average shares: 22,500,000</li>
+          <li>Plus option dilution: 1,500,000</li>
+          <li>Plus convertible bond shares: 2,000,000</li>
+          <li>Plus RSUs: 500,000</li>
+          <li><strong>Diluted shares: 26,500,000</strong></li>
+        </ul>
+
+        <div class="formula-box">
+          <code>Diluted EPS = $66,500,000 / 26,500,000 = $2.51</code>
+        </div>
+
+        <h3>Verify Results</h3>
+        <p>Compare basic ($2.89) to diluted ($2.51) EPS:</p>
+        <ul>
+          <li>Diluted is lower than basic: Correct</li>
+          <li>Dilution percentage: ($2.89 - $2.51) / $2.89 = 13.1%</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Step 9: Verify Your Calculation</h2>
+        <p>After calculating EPS, verify your results against the company's reported figures.</p>
+
+        <h3>Compare to Reported EPS</h3>
+        <p>Companies report basic and diluted EPS on the income statement. Your calculation should closely match. Small differences may occur due to:</p>
+        <ul>
+          <li>Rounding in share counts</li>
+          <li>Precise timing of share issuances</li>
+          <li>Contingent shares or complex securities</li>
+        </ul>
+
+        <h3>Review the EPS Footnote</h3>
+        <p>The EPS calculation note in financial statements provides:</p>
+        <ul>
+          <li>Exact numerator and denominator used</li>
+          <li>Reconciliation from basic to diluted shares</li>
+          <li>Anti-dilutive securities excluded</li>
+        </ul>
+
+        <p>Compare your components to the company's disclosed figures to identify any discrepancies.</p>
+
+        <h3>Reasonableness Check</h3>
+        <p>Ask whether the result makes sense:</p>
+        <ul>
+          <li>Is the P/E ratio reasonable for the industry?</li>
+          <li>Is EPS growth consistent with revenue growth?</li>
+          <li>Does the dilution percentage seem right given known options?</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Practical Tips for EPS Calculation</h2>
+        <p>These tips will help you calculate EPS more efficiently and accurately.</p>
+
+        <h3>Use the Right Time Period</h3>
+        <ul>
+          <li><strong>Annual analysis:</strong> Use fiscal year figures from the 10-K</li>
+          <li><strong>TTM (trailing twelve months):</strong> Sum the four most recent quarters</li>
+          <li><strong>Quarterly:</strong> Use single quarter data from 10-Q</li>
+        </ul>
+
+        <h3>Watch for Stock Splits</h3>
+        <p>Always check for stock splits when comparing EPS across time periods. Financial databases typically show split-adjusted figures, but verify this is the case.</p>
+
+        <h3>Consider Using Adjusted EPS</h3>
+        <p>For trend analysis, consider calculating adjusted EPS that excludes one-time items like:</p>
+        <ul>
+          <li>Restructuring charges</li>
+          <li>Asset impairments</li>
+          <li>Acquisition-related costs</li>
+          <li>Legal settlements</li>
+        </ul>
+        <p>Many companies report adjusted EPS alongside GAAP EPS.</p>
+
+        <h3>Be Consistent</h3>
+        <p>When comparing companies or time periods:</p>
+        <ul>
+          <li>Use the same EPS type (basic vs. diluted) for both</li>
+          <li>Use the same time period (annual, TTM, quarterly)</li>
+          <li>Use the same adjustments for both</li>
+        </ul>
+
+        <h3>Leverage Online Calculators</h3>
+        <p>For quick calculations, use our <a href="/">EPS Calculator</a>. Input the values and get instant results. This saves time and reduces calculation errors.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Common EPS Calculation Mistakes</h2>
+        <p>Avoid these frequent errors in EPS calculations.</p>
+
+        <h3>Using End-of-Period Shares</h3>
+        <p>Always use weighted average shares, not the ending share count. This is the most common mistake and produces incorrect EPS.</p>
+
+        <h3>Forgetting Preferred Dividends</h3>
+        <p>If preferred stock exists, subtract those dividends. Using total net income overstates EPS available to common shareholders.</p>
+
+        <h3>Ignoring Treasury Stock Method</h3>
+        <p>Don't simply add all options to the diluted share count. The treasury stock method accounts for proceeds from exercise, resulting in lower net dilution.</p>
+
+        <h3>Including Anti-Dilutive Securities</h3>
+        <p>Only include securities that reduce EPS. Out-of-the-money options and securities with incremental EPS above basic EPS should be excluded.</p>
+
+        <h3>Mixing Basic and Diluted</h3>
+        <p>When comparing companies, use the same EPS measure for both. Mixing creates unfair comparisons.</p>
+
+        <h3>Not Adjusting for Splits</h3>
+        <p>Historical EPS must be split-adjusted for valid comparisons. Check whether data sources have already made these adjustments.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Using Your EPS Calculation</h2>
+        <p>Once you've calculated EPS, apply it to investment analysis.</p>
+
+        <h3>Calculate P/E Ratio</h3>
+        <div class="formula-box">
+          <code>P/E Ratio = Current Stock Price / EPS</code>
+        </div>
+        <p>Compare to industry averages and historical ranges to assess valuation.</p>
+
+        <h3>Track EPS Growth</h3>
+        <div class="formula-box">
+          <code>EPS Growth = (Current EPS - Prior EPS) / |Prior EPS| x 100</code>
+        </div>
+        <p>Look for consistent positive growth as a quality indicator.</p>
+
+        <h3>Evaluate Dividend Safety</h3>
+        <div class="formula-box">
+          <code>Payout Ratio = Dividend Per Share / EPS x 100</code>
+        </div>
+        <p>Lower ratios indicate more sustainable dividends.</p>
+
+        <h3>Compare to Estimates</h3>
+        <p>Compare your calculated EPS to analyst estimates. Earnings surprises (beating or missing estimates) often drive stock price movements.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Where can I find all the data I need to calculate EPS?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Everything you need is in the company's SEC filings (10-K and 10-Q). The income statement provides net income, notes contain preferred dividend and share count details, and the EPS calculation footnote shows the company's own calculation. Access filings free at sec.gov/edgar or through the company's investor relations website.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Why doesn't my calculated EPS match the company's reported EPS?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Small differences occur due to rounding, precise share timing, or complex securities. Check the EPS calculation footnote to see the exact figures the company used. If there's a large difference, you may have used the wrong share count, forgotten preferred dividends, or made another calculation error.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Should I calculate basic or diluted EPS?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Calculate both for a complete picture. Basic EPS shows actual current earnings distribution. Diluted EPS shows worst-case earnings if all options and convertibles became shares. For valuation and comparisons, most analysts prefer diluted EPS as the more conservative measure.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How do I calculate quarterly EPS?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Use the same formula but with quarterly figures: that quarter's net income, quarterly preferred dividends, and weighted average shares for that specific quarter. Don't annualize the figures - quarterly EPS represents that three-month period only.</p></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What if a company has a net loss?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-answer"><p>Calculate EPS the same way, and the result will be negative (loss per share). For diluted EPS with a net loss, use only basic shares because adding dilutive securities would make the loss per share smaller, which misrepresents dilution. Report diluted EPS equal to basic EPS in loss situations.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Calculate EPS Now</h2>
+        <p>Ready to calculate earnings per share? Use our free <a href="/">EPS Calculator</a> to compute both basic and diluted EPS instantly. Enter your data, and the calculator handles all the math, including the treasury stock method for options.</p>
+
+        <p>Understanding how to calculate EPS is fundamental for stock analysis. With practice, you'll quickly identify the key figures in financial statements and perform accurate calculations that inform your investment decisions.</p>
+      </section>
+
+    <section class="content-section">
+      <h2>EPS Calculation Flowchart</h2>
+      <p>Follow this step-by-step process to calculate EPS from any company's financial statements:</p>
+      <div class="steps-vertical">
+        <div class="step-v-item"><div class="step-v-number">1</div><div class="step-v-title">Locate the Income Statement</div><div class="step-v-desc">Open the company's 10-K (annual) or 10-Q (quarterly) filing from SEC EDGAR or the investor relations page.</div></div>
+        <div class="step-v-item"><div class="step-v-number">2</div><div class="step-v-title">Find Net Income</div><div class="step-v-desc">Look for "Net Income Attributable to Common Shareholders" at the bottom of the income statement. This is your numerator.</div></div>
+        <div class="step-v-item"><div class="step-v-number">3</div><div class="step-v-title">Subtract Preferred Dividends</div><div class="step-v-desc">If the company has preferred stock, subtract declared preferred dividends from net income.</div></div>
+        <div class="step-v-item"><div class="step-v-number">4</div><div class="step-v-title">Get the Share Count</div><div class="step-v-desc">Find "Weighted Average Shares Outstanding" — this is usually listed near the EPS line on the income statement.</div></div>
+        <div class="step-v-item"><div class="step-v-number">5</div><div class="step-v-title">Divide and Verify</div><div class="step-v-desc">Divide adjusted net income by shares outstanding. Compare your result to the company's reported EPS to verify accuracy.</div></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Key Data Points from a 10-K Filing</h2>
+      <div class="table-responsive">
+        <table class="data-table striped colored-header">
+          <thead><tr><th>Data Point</th><th>10-K Location</th><th>What to Look For</th></tr></thead>
+          <tbody>
+            <tr><td>Net Income</td><td>Consolidated Income Statement</td><td>Bottom line, after all expenses and taxes</td></tr>
+            <tr><td>Preferred Dividends</td><td>Notes to Financial Statements</td><td>May be $0 if no preferred stock exists</td></tr>
+            <tr><td>Basic Shares</td><td>Income Statement (below net income)</td><td>Weighted average for the reporting period</td></tr>
+            <tr><td>Diluted Shares</td><td>Income Statement (below basic shares)</td><td>Includes options, warrants, convertibles</td></tr>
+            <tr><td>Stock-Based Comp</td><td>Cash Flow Statement / Notes</td><td>Non-cash expense that signals future dilution</td></tr>
+            <tr><td>Share Repurchases</td><td>Cash Flow from Financing</td><td>Treasury stock purchases reduce share count</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Quick EPS Reference</h2>
+      <div class="stat-cards">
+        <div class="stat-card accent"><div class="stat-card-value">$241</div><div class="stat-card-label">S&P 500 EPS</div><div class="stat-card-desc">2024 benchmark for large-cap stocks</div></div>
+        <div class="stat-card green-accent"><div class="stat-card-value">3</div><div class="stat-card-label">Key Inputs</div><div class="stat-card-desc">Net income, preferred dividends, shares</div></div>
+        <div class="stat-card warning-accent"><div class="stat-card-value">2</div><div class="stat-card-label">EPS Types</div><div class="stat-card-desc">Basic and diluted — both required by SEC</div></div>
+        <div class="stat-card accent"><div class="stat-card-value">10-K</div><div class="stat-card-label">Source Filing</div><div class="stat-card-desc">Annual report with audited financials</div></div>
+      </div>
+      <div class="takeaway-box">
+        <h4>Key Takeaways</h4>
+        <ul>
+          <li>EPS calculation requires only three inputs: net income, preferred dividends, and weighted average shares outstanding</li>
+          <li>Always calculate both basic and diluted EPS for a complete picture of earnings per share</li>
+          <li>Verify your calculation against the company's reported EPS in their SEC filing</li>
+          <li>Use our <a href="/">EPS Calculator</a> for instant, accurate results</li>
+        </ul>
+      </div>
+    </section>
+
+    </article>
+  </div></main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="/" class="logo"><svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>EPS Calculator</span></a><p>Free earnings per share calculator for investors and analysts.</p></div>
+      <div class="footer-nav"><h4>Calculators</h4><ul><li><a href="/">Basic EPS</a></li><li><a href="/#panel-diluted">Diluted EPS</a></li><li><a href="/#panel-pe">P/E Ratio</a></li><li><a href="/#panel-growth">EPS Growth</a></li></ul></div>
+      <div class="footer-nav"><h4>Guides</h4><ul><li><a href="/blog/earnings-per-share-formula/">EPS Formula</a></li><li><a href="/blog/what-is-eps-in-stocks/">What is EPS?</a></li><li><a href="/blog/price-earnings-ratio-formula/">P/E Ratio</a></li></ul></div>
+      <div class="footer-nav"><h4>Legal</h4><ul><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025-2026 EPS Calculator. For educational purposes only. Not financial advice.</p></div>
+  </div></footer>
+  <script src="/assets/js/calculator.js"></script>
+</body>
+</html>
